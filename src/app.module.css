@@ -1,4 +1,4 @@
-@value main from './common/colors.css';
+@value Main, ligthGrey from './common/colors.css';
 @value wrapPadding from './common/size.css';
 
 /* test */
@@ -14,26 +14,22 @@
 .button {
   position: fixed;
   opacity: 0;
-  bottom: 1rem;
-  right: 1rem;
-  z-index: -10;
-  padding: 1rem;
-  background-color: main;
-  box-shadow: 1px 1px 6px 3px rgba(0,0,0,0.3);
-  transition: opacity 0.3s ease-in;
+  bottom: 2rem;
+  right: 2rem;
+  color: ligthGrey;
+  font-size: 4.5rem;
+  transition: 0.2s all ease-in;
 }
 
 .button.active {
   opacity: 1;
-  z-index: 10;
 }
 
 .button:hover {
+  transition: 0.2s all ease-in;
   cursor: pointer;
-  background-color: blue;
+  color: Main;
 }
 
-.home {padding: 1rem; border: 1px solid #000;}
-.about {padding: 1rem; border: 1px solid #000;}
 /* test */
 

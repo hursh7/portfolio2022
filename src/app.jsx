@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import styles from './app.module.css';
 import Header from './components/header/header';
 import SideMenu from './components/side_menu/side_menu';
@@ -6,6 +10,7 @@ import Main from './components/main/main';
 import About from './components/about/about';
 import Tech from './components/tech/tech';
 
+library.add(fab, fas);
 function App() {
   const [scrollY, setScrollY] = useState(0);
   const [btnStatus, setBtnStatus] = useState(false);
@@ -43,9 +48,14 @@ function App() {
     <Header onReset={handleTop} />
     <SideMenu />
     <Main />
-    {/* <About /> */}
     <Tech />
-    {btnStatus && <button className={`${styles.button} ${styles.active}`} onClick={handleTop}>Top</button>}
+    {
+    btnStatus && 
+    <button className={`${styles.button} ${styles.active}`} onClick={handleTop}>
+      <FontAwesomeIcon icon={["fas", "arrow-alt-circle-up"]} />
+    </button>
+    }
+    
   </div>
   )
 }
