@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "spoqa";
+  font-display: fallback;
+  font-weight: 100;
+  font-style: thin;  
+  src: url("./static/fonts/SpoqaHanSansNeo-Thin.ttf") format("truetype"), url("./static/fonts/SpoqaHanSansNeo-Thin.woff") format("woff"), url("./static/fonts/SpoqaHanSansNeo-Thin.woff2") format("woff2") url("./static/fonts/SpoqaHanSansNeo-Thin.eot?iefix") format("embedded-opentype");
+}
+@font-face {
+  font-family: "spoqa";
+  font-display: fallback;
+  font-weight: 300;
+  font-style: light;  
+  src: url("./static/fonts/SpoqaHanSansNeo-Light.ttf") format("truetype"), url("./static/fonts/SpoqaHanSansNeo-Light.woff") format("woff"), url("./static/fonts/SpoqaHanSansNeo-Light.woff2") format("woff2") url("./static/fonts/SpoqaHanSansNeo-Light.eot?iefix") format("embedded-opentype");
+}
+@font-face {
+  font-family: "spoqa";
+  font-display: fallback;
+  font-weight: 400;
+  font-style: Normal;  
+  src: url("./static/fonts/SpoqaHanSansNeo-Regular.ttf") format("truetype"), url("./static/fonts/SpoqaHanSansNeo-Regular.woff") format("woff"), url("./static/fonts/SpoqaHanSansNeo-Regular.woff2") format("woff2") url("./static/fonts/SpoqaHanSansNeo-Regular.eot?iefix") format("embedded-opentype");
+}
+@font-face {
+  font-family: "spoqa";
+  font-display: fallback;
+  font-weight: 500;
+  font-style: Medium;  
+  src: url("./static/fonts/SpoqaHanSansNeo-Medium.ttf") format("truetype"), url("./static/fonts/SpoqaHanSansNeo-Medium.woff") format("woff"), url("./static/fonts/SpoqaHanSansNeo-Medium.woff2") format("woff2") url("./static/fonts/SpoqaHanSansNeo-Medium.eot?iefix") format("embedded-opentype");
+}
+@font-face {
+  font-family: "spoqa";
+  font-display: fallback;
+  font-weight: 700;
+  font-style: Bold;  
+  src: url("./static/fonts/SpoqaHanSansNeo-Bold.ttf") format("truetype"), url("./static/fonts/SpoqaHanSansNeo-Bold.woff") format("woff"), url("./static/fonts/SpoqaHanSansNeo-Bold.woff2") format("woff2") url("./static/fonts/SpoqaHanSansNeo-Bold.eot?iefix") format("embedded-opentype");
+}
+@font-face {
+  font-family: "wemake";
+  font-display: fallback;
+  font-weight: 300;
+  font-style: regular;  
+  src: url("./static/fonts/Wemakeprice-Regular.ttf") format("truetype"), url("./static/fonts/Wemakeprice-Regular.otf") format("embedded-opentype");
+}
+@font-face {
+  font-family: "wemake";
+  font-display: fallback;
+  font-weight: 400;
+  font-style: medium;  
+  src: url("./static/fonts/Wemakeprice-SemiBold.ttf") format("truetype"), url("./static/fonts/Wemakeprice-SemiBold.otf") format("embedded-opentype");;
+}
+@font-face {
+  font-family: "wemake";
+  font-display: fallback;
+  font-weight: 500;
+  font-style: bold;  
+  src: url("./static/fonts/Wemakeprice-Bold.ttf") format("truetype"), url("./static/fonts/Wemakeprice-Bold.otf") format("embedded-opentype");;
+}
+@font-face {
+  font-family: "montserrat";
+  font-display: fallback;
+  font-weight: 300;
+  font-style: regular;  
+  src: url("./static/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat";
+  font-display: fallback;
+  font-weight: 400;
+  font-style: medium;  
+  src: url("./static/fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "montserrat";
+  font-display: fallback;
+  font-weight: 500;
+  font-style: bold;  
+  src: url("./static/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'spoqa';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (min-width: 0\0) {
+  :root,
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  :root,
+  html {
+    font-size: 10px;
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ol, ul {
+  list-style: none;
+}
+button {
+  outline: none;
+  border: 0;
+  background-color: transparent;
+}

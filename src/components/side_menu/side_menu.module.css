@@ -1,0 +1,24 @@
+@value Main, Grey, ligthGrey, lightPink from '../../common/colors.css';
+@value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2rem;
+    color: Grey;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: calc(50% - 8rem);
+    left: 2%;
+}
+
+.nav li {
+    margin-bottom: 0.3rem;
+    transition: .1s all ease-in;
+}
+
+.nav li:hover {
+    cursor: pointer;
+    color: Main;
+}

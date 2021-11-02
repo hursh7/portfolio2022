@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "spoqa";
+    font-display: fallback;
+    font-weight: 100;
+    font-style: thin;  
+    src: url("./SpoqaHanSansNeo-Thin.ttf") format("truetype"), url("./SpoqaHanSansNeo-Thin.woff") format("woff"), url("./SpoqaHanSansNeo-Thin.woff2") format("woff2") url("./SpoqaHanSansNeo-Thin.eot?iefix") format("embedded-opentype");
+  }
+@font-face {
+    font-family: "spoqa";
+    font-display: fallback;
+    font-weight: 300;
+    font-style: light;  
+    src: url("./SpoqaHanSansNeo-Light.ttf") format("truetype"), url("./SpoqaHanSansNeo-Light.woff") format("woff"), url("./SpoqaHanSansNeo-Light.woff2") format("woff2") url("./SpoqaHanSansNeo-Light.eot?iefix") format("embedded-opentype");
+  }
+@font-face {
+    font-family: "spoqa";
+    font-display: fallback;
+    font-weight: 400;
+    font-style: normal;  
+    src: url("./SpoqaHanSansNeo-Regular.ttf") format("truetype"), url("./SpoqaHanSansNeo-Regular.woff") format("woff"), url("./SpoqaHanSansNeo-Regular.woff2") format("woff2") url("./SpoqaHanSansNeo-Regular.eot?iefix") format("embedded-opentype");
+  }
+@font-face {
+    font-family: "spoqa";
+    font-display: fallback;
+    font-weight: 500;
+    font-style: medium;  
+    src: url("./SpoqaHanSansNeo-Medium.ttf") format("truetype"), url("./SpoqaHanSansNeo-Medium.woff") format("woff"), url("./SpoqaHanSansNeo-Medium.woff2") format("woff2") url("./SpoqaHanSansNeo-Medium.eot?iefix") format("embedded-opentype");
+  }
+@font-face {
+    font-family: "spoqa";
+    font-display: fallback;
+    font-weight: 700;
+    font-style: bold;  
+    src: url("./SpoqaHanSansNeo-Bold.ttf") format("truetype"), url("./SpoqaHanSansNeo-Bold.woff") format("woff"), url("./SpoqaHanSansNeo-Bold.woff2") format("woff2") url("./SpoqaHanSansNeo-Bold.eot?iefix") format("embedded-opentype");
+  }

@@ -1,0 +1,63 @@
+@value Main, Grey, ligthGrey, lightPink from '../../common/colors.css';
+@value wrapPadding, sectionTopBottom, mainText from '../../common/size.css';
+
+.main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: sectionTopBottom wrapPadding;
+    width: 100%;
+    background-color: lightPink;
+}
+
+.text {
+    width: 50rem;
+}
+
+.name {
+    font-family: 'montserrat';
+    font-size: 1.6rem;
+    color: #FF9270;
+    letter-spacing: -1px;
+    text-indent: mainText;
+}
+
+.title {
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 9rem;
+    /* color: #4F8073; */
+    letter-spacing: -5px;
+    line-height: 8.5rem;
+}
+
+.introduce {
+    padding-left: mainText;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+    color: ligthGrey;
+}
+
+.button {
+    font-family: 'montserrat';
+    font-size: 1.6rem;
+    margin-top: 1.5rem;
+    background-color: #FF9270;
+    padding: 1.2rem 1.5rem;
+    margin-left: mainText;
+    color: #fff;
+    transition: all .3s ease-in;
+}
+
+.button:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.img {
+    width: 50rem;
+}
+
+
+
