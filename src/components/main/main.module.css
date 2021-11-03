@@ -1,4 +1,4 @@
-@value Main, Grey, ligthGrey, lightPink from '../../common/colors.css';
+@value Main, Grey, ligthGrey, lightPink, Button from '../../common/colors.css';
 @value wrapPadding, sectionTopBottom, mainText from '../../common/size.css';
 
 .main {
@@ -18,7 +18,7 @@
 .name {
     font-family: 'montserrat';
     font-size: 1.6rem;
-    color: #FF9270;
+    color: Button;
     letter-spacing: -1px;
     text-indent: mainText;
 }

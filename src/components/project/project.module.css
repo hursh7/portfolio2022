@@ -1,0 +1,99 @@
+@value Main, boldMain, Grey, ligthGrey, lightPink, Button from '../../common/colors.css';
+@value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
+
+.project {
+    padding: sectionTopBottom wrapPadding;
+}
+
+.index {
+    font-family: 'montserrat';
+    font-size: Title;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 55rem;
+    background-color: rgb(223, 223, 223);
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.canvas {
+    overflow: hidden;
+    flex: 1 1 60%;
+    background-color: Button;
+    height: 100%;
+}
+
+.text {
+    overflow: hidden;
+    flex: 1 1 40%;
+    padding: 0 5rem;
+}
+
+.number {
+    font-family: 'montserrat';
+    font-size: 3rem;
+    margin-bottom: 10rem;
+}
+
+.title {
+    font-family: 'montserrat';
+    font-weight: 400;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.introduce {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.tecbox {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+
+.tec {
+    font-family: 'montserrat';
+    margin-right: 0.5rem;
+}
+
+.linkbox {
+    display: flex;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    background-color: boldMain;
+    padding: 1rem 2rem;
+    margin: 2rem 1rem 0 0;
+}
+
+.link:hover {
+    opacity: .9;
+}
+
+.icon {
+    width: 2.3rem;
+    margin-right: 0.5rem;
+}
+
+.path {
+    font-family: 'montserrat';
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #fff;
+}

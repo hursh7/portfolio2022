@@ -9,6 +9,7 @@ import SideMenu from './components/side_menu/side_menu';
 import Main from './components/main/main';
 import About from './components/about/about';
 import Tech from './components/tech/tech';
+import Project from './components/project/project';
 
 library.add(fab, fas);
 function App() {
@@ -49,6 +50,7 @@ function App() {
     <SideMenu />
     <Main />
     <Tech />
+    <Project />
     {
     btnStatus && 
     <button className={`${styles.button} ${styles.active}`} onClick={handleTop}>
