@@ -1,0 +1,36 @@
+@value Main, boldMain, Grey, ligthGrey, lightPink, Button from '../../common/colors.css';
+@value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
+
+.footer {
+    background-color: boldMain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 5rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav {
+    display: flex;
+}
+
+.copyright {
+    font-family: 'montserrat';
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.ref {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.img {
+    width: 8rem;
+    margin: 0 0.5rem;
+}

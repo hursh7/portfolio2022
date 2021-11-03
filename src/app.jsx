@@ -10,6 +10,7 @@ import Main from './components/main/main';
 import About from './components/about/about';
 import Tech from './components/tech/tech';
 import Project from './components/project/project';
+import Footer from './components/footer/footer';
 
 library.add(fab, fas);
 function App() {
@@ -49,8 +50,10 @@ function App() {
     <Header onReset={handleTop} />
     <SideMenu />
     <Main />
+    <About />
     <Tech />
     <Project />
+    <Footer />
     {
     btnStatus && 
     <button className={`${styles.button} ${styles.active}`} onClick={handleTop}>
