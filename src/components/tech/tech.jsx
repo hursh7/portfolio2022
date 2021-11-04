@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './tech.module.css';
+import { ReactComponent as IconHtml } from '../../static/images/html.svg';
+// import { ReactComponent as IconCss } from '../../static/images/css.svg';
 
 const Tech = (props) => (
         <section className={styles.tech}>
@@ -8,7 +10,8 @@ const Tech = (props) => (
             <div className={`${styles.container} ${styles.mb}`}>
                 <div className={styles.item}>
                     <div className={styles.icon}>
-                        <img className={styles.img} src="/images/html.svg" alt="html" />
+                        {/* <img src={require('../../static/images/html.svg').default} alt="html" /> */}
+                        <IconHtml fill="orange" />
                     </div>
                     <p className={styles.title}>Html 5</p>
                 </div>

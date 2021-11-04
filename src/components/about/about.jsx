@@ -75,7 +75,7 @@ const About = (props) => (
                             <span>Experience</span>
                         </h3>
                         <ul className={styles.detail}>
-                            <li>대법원 전자가족관계등록시스템 대법원 전자가족관계등록시스템</li>
+                            <li>대법원 전자가족관계등록시스템</li>
                             <li>퍼블리싱 / 웹표준 및 접근성 심사</li>
                             <li>2020.04 ~ 2021.04</li>
                         </ul>

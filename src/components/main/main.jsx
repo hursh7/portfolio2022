@@ -20,7 +20,9 @@ const Main = () => (
                 </div>
                 <button className={styles.button}>SEE MY RESUME</button>
             </div>
-            <img className={styles.img} src="/images/main.svg" alt="메인" />
+            <div className={styles.img}>
+                <div className={styles.img2}></div>
+            </div>
         </section>
     );
 
