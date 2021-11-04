@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './footer.module.css';
 
-const Footer = (props) => (
+const Footer = () => (
         <footer className={styles.footer}>
             <ul className={styles.copyright}>
                 <li>Copyright2021. Junhyung Park. All rights reserved.</li>
@@ -10,8 +10,9 @@ const Footer = (props) => (
             </ul>
             <div className={styles.ref}>
                 <span>by</span>
-                <img className={styles.img} src="/images/footer_ref_ape.svg" alt="iconape" />
-                <img className={styles.img} src="/images/footer_ref_flaticon.svg" alt="flaticon" />
+                <img className={styles.img} src={require('../../static/images/footer_ape.svg').default} alt="iconape" />
+                <img className={styles.img} src={require('../../static/images/footer_fla.svg').default} alt="flaticon" />
+                <img className={styles.img} src={require('../../static/images/footer_freepik.svg').default} alt="freepik" />
             </div>
         </footer>    
     );

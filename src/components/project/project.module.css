@@ -86,12 +86,18 @@
     opacity: .9;
 }
 
+.img {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
 .icon {
     width: 2.3rem;
     margin-right: 0.5rem;
 }
 
 .path {
+    position: relative;
     font-family: 'montserrat';
     font-size: 1.4rem;
     font-weight: 300;

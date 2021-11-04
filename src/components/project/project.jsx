@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './project.module.css';
 
-const Project = (props) => (
+const Project = () => (
        <section className={styles.project}>
             <h2 className={styles.index}>Projects</h2>
             <div className={styles.container}>
@@ -23,13 +23,13 @@ const Project = (props) => (
                               <div className={styles.tec}>#Cloudinary</div>
                          </div>
                          <div className={styles.linkbox}>
-                              <a href="https://github.com/hursh7/business-card-maker" target="_blank" className={styles.link}>
-                                   <img className={styles.icon} src="/images/link_github.svg" alt="깃허브" />
+                              <a href="https://github.com/hursh7/business-card-maker" target="_blank"  rel="noreferrer" className={styles.link}>
+                                   <img className={styles.img} src={require('../../static/images/link_github.svg').default} alt="git" />
                                    <span className={styles.path}>Github</span>
                               </a>
-                              <a href="https://hursh7.github.io/business-card-maker/" target="_blank" className={styles.link}>
-                                   <img className={styles.icon} src="/images/link_page.svg" alt="깃허브" />
-                                   <span className={styles.path}>Page</span>
+                              <a href="https://hursh7.github.io/business-card-maker/" target="_blank"  rel="noreferrer" className={styles.link}>
+                                   <img className={styles.img} src={require('../../static/images/link_page.svg').default} alt="page" />
+                                   <p className={styles.path}>Page</p>
                               </a>
                          </div>
                       </div>

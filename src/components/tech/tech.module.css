@@ -41,6 +41,10 @@
     border: 1px solid #e4e4e4;
     border-radius: 0.5rem;
 }
+.item:hover {
+    transform: scale(1.02);
+    transition: 0.1s all ease-in;
+}
 
 .icon {
     width: 9rem;

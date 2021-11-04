@@ -6,7 +6,7 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import styles from './about.module.css';
 
 library.add(fas, far);
-const About = (props) => (
+const About = () => (
         <section className={styles.about}>
             <h2 className={styles.index}>About Me</h2>
             <div className={styles.container}>
@@ -39,7 +39,7 @@ const About = (props) => (
                 <div className={styles.history}>
                     <div className={styles.content}>
                         <h3 className={styles.title}>
-                            <img className={styles.icon2} src="/images/about_career.png" />
+                            <img className={styles.icon2} src={require('../../static/images/about_career.png').default} alt="" />
                             <span>Career</span>
                         </h3>
                         <ul className={styles.detail}>
@@ -55,7 +55,7 @@ const About = (props) => (
                     </div>
                     <div className={styles.content}>
                         <h3 className={styles.title}>
-                            <img className={styles.icon2} src="/images/about_education.png" />
+                            <img className={styles.icon2} src={require('../../static/images/about_education.png').default} alt="" />
                             <span>Education</span>
                         </h3>
                         <ul className={styles.detail}>
@@ -71,7 +71,7 @@ const About = (props) => (
                     </div>
                     <div className={styles.content}>
                         <h3 className={styles.title}>
-                            <img className={styles.icon2} src="/images/about_experience.png" />
+                            <img className={styles.icon2} src={require('../../static/images/about_experience.png').default} alt="" />
                             <span>Experience</span>
                         </h3>
                         <ul className={styles.detail}>

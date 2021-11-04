@@ -1,49 +1,46 @@
 @value Main, Grey, ligthGrey, lightPink, Button from '../../common/colors.css';
-@value wrapPadding, sectionTopBottom, mainText from '../../common/size.css';
+@value wrapPadding, sectionTopBottom, sectionResponsive, mainText, Notebook, Phone from '../../common/size.css';
 
 .main {
     display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding: sectionTopBottom wrapPadding;
-    width: 100%;
-    background-color: lightPink;
 }
 
 .text {
-    width: 50rem;
+    width: 65rem;
 }
 
 .name {
-    font-family: 'montserrat';
     font-size: 1.6rem;
     color: Button;
     letter-spacing: -1px;
     text-indent: mainText;
 }
 
-.title {
-    font-family: 'montserrat';
+.position {
+    font-size: 10rem;
     font-weight: 400;
-    font-size: 9rem;
-    color: #4F8073;
-    letter-spacing: -5px;
-    line-height: 8.5rem;
+    /* color: #4F8073; */
+    letter-spacing: -0.5rem;
+    line-height: 9rem;
+    margin-bottom: 3rem;
 }
 
 .introduce {
     padding-left: mainText;
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
     color: ligthGrey;
+    margin-bottom: 3rem;
 }
 
 .button {
-    font-family: 'montserrat';
+    user-select: none;
     font-size: 1.6rem;
-    margin-top: 1.5rem;
     background-color: #FF9270;
+    border-radius: 0.5rem;
     padding: 1.2rem 1.5rem;
     margin-left: mainText;
     color: #fff;
@@ -56,10 +53,70 @@
 }
 
 .img {
-    width: 50rem;
-    height: 50rem;
-    background: url('../../static/images/main.svg') no-repeat;
+    width: 65rem;
+    height: 65rem;
+    background: url('../../static/images/main_bg11.svg') no-repeat center;
 }
+
+@media screen and (max-width: Notebook) {
+    .main {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .img {
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: Phone) {
+    .main {
+        padding: sectionResponsive 0;
+    }
+    
+    .text {
+        width: 35rem;
+    }
+    
+    .name {
+        font-size: 1.2rem;
+        color: Button;
+        letter-spacing: -1px;
+        text-indent: mainText;
+    }
+    
+    .position {
+        font-size: 5rem;
+        letter-spacing: -0.5rem;
+        line-height: 5.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .introduce {
+        padding-left: mainText;
+        font-size: 1.4rem;
+        line-height: 1.5;
+        padding: 0 2rem;
+    }
+    
+    .button {
+        font-size: 1.2rem;
+    }
+    
+    .button:hover {
+        cursor: pointer;
+        opacity: .8;
+    }
+    
+    .img {
+        width: 30rem;
+        height: 30rem;
+        background: url('../../static/images/main_bg11.svg') no-repeat center;
+    }
+}
+
+
+
 
 
 
