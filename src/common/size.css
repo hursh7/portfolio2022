@@ -1,8 +1,12 @@
 @value wrapPadding: 10rem;
-@value sectionTopBottom: 8rem;
-@value sectionResponsive: 2rem;
+@value sectionTopBottom: 7rem;
+@value sectionMediaPad: 5rem;
+@value sectionMediaPhone: 2rem;
 @value mainText: 1rem;
-@value Title: 3rem;
+@value Title: 3.5rem;
+@value TitleMedia: 2rem;
 @value Notebook: 1280px;
 @value Pad: 1050px;
 @value Phone: 420px;
+@value ResponsiveBg: 30rem;
+@value ResponsivePaddingBottom: 10rem;

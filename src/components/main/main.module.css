@@ -1,5 +1,5 @@
-@value Main, Grey, ligthGrey, lightPink, Button from '../../common/colors.css';
-@value wrapPadding, sectionTopBottom, sectionResponsive, mainText, Notebook, Phone from '../../common/size.css';
+@value Main, MainGrey, LigthGrey, MainOrange from '../../common/colors.css';
+@value wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, mainText, ResponsiveBg, Notebook, Phone from '../../common/size.css';
 
 .main {
     display: flex;
@@ -14,7 +14,7 @@
 
 .name {
     font-size: 1.6rem;
-    color: Button;
+    color: MainOrange;
     letter-spacing: -1px;
     text-indent: mainText;
 }
@@ -22,7 +22,7 @@
 .position {
     font-size: 10rem;
     font-weight: 400;
-    /* color: #4F8073; */
+    color: MainGrey;
     letter-spacing: -0.5rem;
     line-height: 9rem;
     margin-bottom: 3rem;
@@ -32,14 +32,14 @@
     padding-left: mainText;
     font-size: 1.8rem;
     line-height: 1.5;
-    color: ligthGrey;
+    color: LigthGrey;
     margin-bottom: 3rem;
 }
 
 .button {
     user-select: none;
     font-size: 1.6rem;
-    background-color: #FF9270;
+    background-color: MainOrange;
     border-radius: 0.5rem;
     padding: 1.2rem 1.5rem;
     margin-left: mainText;
@@ -60,6 +60,7 @@
 
 @media screen and (max-width: Notebook) {
     .main {
+        padding: sectionMediaPad 0;
         flex-direction: column-reverse;
         text-align: center;
     }
@@ -71,7 +72,7 @@
 
 @media screen and (max-width: Phone) {
     .main {
-        padding: sectionResponsive 0;
+        padding: sectionMediaPhone 0;
     }
     
     .text {
@@ -86,9 +87,9 @@
     }
     
     .position {
-        font-size: 5rem;
-        letter-spacing: -0.5rem;
-        line-height: 5.5rem;
+        font-size: 3.5rem;
+        letter-spacing: -0.3rem;
+        line-height: 4rem;
         margin-bottom: 1rem;
     }
     
@@ -103,15 +104,9 @@
         font-size: 1.2rem;
     }
     
-    .button:hover {
-        cursor: pointer;
-        opacity: .8;
-    }
-    
     .img {
-        width: 30rem;
-        height: 30rem;
-        background: url('../../static/images/main_bg11.svg') no-repeat center;
+        width: ResponsiveBg;
+        height: ResponsiveBg;
     }
 }
 

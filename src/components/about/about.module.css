@@ -1,14 +1,13 @@
-@value Main, Grey, ligthGrey, lightPink, About from '../../common/colors.css';
-@value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
+@value Main, LightMain, MainGrey, LigthGrey, MainOrange, MainBlue from '../../common/colors.css';
+@value Title, TitleMedia, wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, mainText, Notebook, Pad, Phone, ResponsiveBg, ResponsivePaddingBottom from '../../common/size.css';
 
 .about {
     padding: sectionTopBottom wrapPadding;
 }
 
 .index {
-    font-family: 'montserrat';
     font-size: Title;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     margin-bottom: 5rem;
 }
@@ -27,24 +26,9 @@
     flex: 1 1 40%;
 }
 
-.canvas {
-    width: 40rem;
-    height: 40rem;
-    margin-bottom: 5rem;
-}
-
 .img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    font-size: 1.6rem;
-    border: 1px solid #F6EBFF;
-    box-shadow: 21px 21px 0px -12px About;
-    -webkit-box-shadow: 21px 21px 0px -12px About;
-    -moz-box-shadow: 21px 21px 0px -12px About; 
+    width: 50rem;
+    height: 50rem;
 }
 
 .info {
@@ -63,7 +47,7 @@
 
 .icon {
     font-size: 2rem;
-    color: About;
+    color: Main;
     margin-right: 1.5rem;
 }
 
@@ -74,7 +58,7 @@
 }
 
 .history {
-    padding: 0 20rem;
+    padding: 0 15rem;
     display: flex;
     flex: 1 1 60%;
     flex-wrap: wrap;
@@ -83,6 +67,10 @@
 
 .content {
     margin-bottom: 5rem;
+}
+
+.mb0 {
+    margin-bottom: 0!important;
 }
 
 .title {
@@ -115,7 +103,7 @@
     left: 0;
     width: 0.1rem;
     height: 6rem;
-    background-color: About;
+    background-color: MainOrange;
 }
 
 .detail::after {
@@ -127,8 +115,8 @@
     width: 1rem;
     height: 1rem;
     border-radius: 50%;
-    border: 1px solid rgba(255,146,112);
-    background-color: rgba(255,146,112);
+    border: 1px solid MainOrange;
+    background-color: MainOrange;
     background-clip: content-box;
     padding: 0.2rem;
 }
@@ -136,24 +124,129 @@
 .detail li:nth-child(1) {
     font-size: 1.8rem;
     font-weight: 600;
-    color: Grey;
+    color: MainGrey;
     margin-bottom: 0.5rem;
 }
 .detail li:nth-child(2) {
     font-size: 1.5rem;
     font-weight: 600;
-    color: rgb(90, 100, 110);
+    color: LigthGrey;
     margin-bottom: 1.4rem;
 }
 .detail li:nth-child(3) {
     font-size: 1.3rem;
     font-weight: 500;
-    color: About;
+    color: MainOrange;
 }
 
-.date {
-    font-size: 1.3rem;
-    font-weight: 500;
-    color: About;
-    margin-left: 1rem;
+@media screen and (max-width: Notebook) {
+    .profile {
+        margin-bottom: ResponsivePaddingBottom;
+    }
+    
+    .history {
+        padding: 0 15rem;
+        display: flex;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .content {
+        margin-bottom: 5rem;
+    }
 }
+
+@media screen and (max-width: Pad) {
+    .about {
+        padding: sectionMediaPad wrapPadding;
+    }
+    
+    .history {
+        padding: 0 8rem;
+    }
+}
+
+@media screen and (max-width: Phone) {
+    .about {
+        padding: sectionMediaPhone 5rem;
+    }
+
+    .history {
+        width: 100%;
+    }
+    
+    .index {
+        font-size: TitleMedia;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    
+    .img {
+        width: ResponsiveBg;
+        height: ResponsiveBg;
+        margin-bottom: 3rem;
+    }
+    
+    .info {
+        font-size: 1.4rem;
+    }
+    
+    .icon {
+        font-size: 1.6rem;
+    }
+    
+    .history {
+        margin-top: -5rem;
+        padding: 0;
+    }
+
+    .content {
+        margin-bottom: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+    
+    .icon2 {
+        width: 2.5rem;
+        margin-right: 1rem;
+    }
+    
+    .detail {
+        position: relative;
+        font-size: 1.6rem;
+        padding-left: 0;
+    }
+
+    .detail::before {
+        display: none;
+    }
+    
+    .detail::after {
+        display: none;
+    }
+    
+    .detail li:nth-child(1) {
+        font-size: 1.6rem;
+        margin-bottom: 0.3rem;
+    }
+    .detail li:nth-child(2) {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+    .detail li:nth-child(3) {
+        font-size: 1.2rem;
+    }
+}
+

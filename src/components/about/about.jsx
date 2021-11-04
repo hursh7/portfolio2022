@@ -12,7 +12,7 @@ const About = () => (
             <div className={styles.container}>
                 <div className={styles.profile}>
                     <div className={styles.canvas}>
-                        <img className={styles.img} src="" alt="" />
+                        <img className={styles.img} src={require('../../static/images/main_bg05-2.svg').default} alt="" />
                     </div>
                     <div className={styles.info}>
                         <ul className={styles.itembox}>
@@ -69,7 +69,7 @@ const About = () => (
                             <li>2019.03 ~ 2019.04</li>
                         </ul>
                     </div>
-                    <div className={styles.content}>
+                    <div className={`${styles.content} ${styles.mb0}`}>
                         <h3 className={styles.title}>
                             <img className={styles.icon2} src={require('../../static/images/about_experience.png').default} alt="" />
                             <span>Experience</span>
