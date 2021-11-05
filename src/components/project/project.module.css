@@ -1,5 +1,5 @@
-@value Main, boldMain, MainGrey, ligthGrey, lightPink, Button from '../../common/colors.css';
-@value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
+@value Main, MainGrey, LigthGrey, lightPink, Button from '../../common/colors.css';
+@value Title, wrapPadding, sectionTopBottom, Notebook, Pad, Phone from '../../common/size.css';
 
 .project {
     padding: sectionTopBottom wrapPadding;
@@ -23,7 +23,7 @@
     align-items: center;
     width: 100%;
     height: 55rem;
-    background-color: rgb(223, 223, 223);
+    background-color: rgb(241, 241, 241);
     overflow: hidden;
     margin-bottom: 5rem;
 }
@@ -42,13 +42,11 @@
 }
 
 .number {
-    font-family: 'montserrat';
     font-size: 3rem;
     margin-bottom: 10rem;
 }
 
 .title {
-    font-family: 'montserrat';
     font-weight: 400;
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -66,7 +64,6 @@
 }
 
 .tec {
-    font-family: 'montserrat';
     margin-right: 0.5rem;
 }
 
@@ -77,7 +74,7 @@
 .link {
     display: flex;
     align-items: center;
-    background-color: boldMain;
+    background-color: MainGrey;
     padding: 1rem 2rem;
     margin: 2rem 1rem 0 0;
 }
@@ -98,8 +95,25 @@
 
 .path {
     position: relative;
-    font-family: 'montserrat';
     font-size: 1.4rem;
     font-weight: 300;
     color: #fff;
+}
+
+@media screen and (max-width: Notebook) {
+    .project {
+        padding: sectionTopBottom wrapPadding;
+    }
+    
+    .canvas {
+        flex: 1 1 55%;
+    }
+    
+    .text {
+        flex: 1 1 45%;
+    }
+}
+
+@media screen and (max-width: Pad) {
+    
 }
