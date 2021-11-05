@@ -1,4 +1,4 @@
-@value Main, boldMain, Grey, ligthGrey, lightPink, Button from '../../common/colors.css';
+@value Main, boldMain, MainGrey, ligthGrey, lightPink, Button from '../../common/colors.css';
 @value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
 
 .project {
@@ -6,9 +6,9 @@
 }
 
 .index {
-    font-family: 'montserrat';
     font-size: Title;
-    font-weight: 400;
+    font-weight: 500;
+    color: MainGrey;
     text-align: center;
     margin-bottom: 5rem;
 }

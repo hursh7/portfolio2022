@@ -1,23 +1,22 @@
-@value Main, Grey, ligthGrey, lightPink from '../../common/colors.css';
-@value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
+@value Main, LigthGrey, ligthGrey, MainOrange from '../../common/colors.css';
+@value Title, TitleMedia, wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, Pad, Phone from '../../common/size.css';
 
 .tech {
     padding: sectionTopBottom wrapPadding;
 }
 
 .index {
-    font-family: 'montserrat';
     font-size: Title;
-    font-weight: 400;
+    font-weight: 500;
+    color: MainGrey;
     text-align: center;
     margin-bottom: 5rem;
 }
 
 .sub {
-    font-family: 'montserrat';
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
-    color: ligthGrey;
+    color: LigthGrey;
 }
 
 .container {
@@ -27,7 +26,7 @@
 }
 
 .mb {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 .item {
@@ -58,7 +57,33 @@
 }
 
 .title {
-    font-family: 'montserrat';
     font-size: 1.3rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: Pad) {
+    .tech {
+        padding: sectionMediaPad wrapPadding;
+    }
+}
+
+@media screen and (max-width: Phone) {
+    .tech {
+        padding: sectionMediaPhone 5rem;
+    }
+
+    .index {
+        font-size: TitleMedia;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: TitleMedia;
+    }
+
+    .sub {
+        font-size: 1.8rem;
+    }
+
+    .item {
+        margin: 1.8rem 0;
+    }
 }

@@ -1,5 +1,5 @@
 @value Main, Grey, ligthGrey, lightPink from '../../common/colors.css';
-@value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
+@value Title, wrapPadding, sectionTopBottom, Phone from '../../common/size.css';
 
 .nav {
     display: flex;
@@ -21,4 +21,10 @@
 .nav li:hover {
     cursor: pointer;
     color: Main;
+}
+
+@media screen and (max-width: Phone) {
+    .nav {
+       display: none;
+    }
 }

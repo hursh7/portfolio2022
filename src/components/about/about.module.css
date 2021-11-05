@@ -8,6 +8,7 @@
 .index {
     font-size: Title;
     font-weight: 500;
+    color: MainGrey;
     text-align: center;
     margin-bottom: 5rem;
 }
@@ -180,7 +181,7 @@
         font-size: TitleMedia;
         font-weight: 500;
         text-align: center;
-        margin-bottom: 5rem;
+        margin-bottom: TitleMedia;
     }
     
     .img {
