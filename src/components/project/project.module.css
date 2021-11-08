@@ -1,5 +1,5 @@
 @value Main, MainGrey, LigthGrey, lightPink, Button from '../../common/colors.css';
-@value Title, wrapPadding, sectionTopBottom, Notebook, Pad, Phone from '../../common/size.css';
+@value Title, TitleMedia, wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, Notebook, Pad, Phone from '../../common/size.css';
 
 .project {
     padding: sectionTopBottom wrapPadding;
@@ -32,6 +32,7 @@
     overflow: hidden;
     flex: 1 1 60%;
     background-color: Button;
+    width: 100%;
     height: 100%;
 }
 
@@ -115,5 +116,82 @@
 }
 
 @media screen and (max-width: Pad) {
+    .project {
+        padding: sectionTopBottom sectionMediaPad;
+    }
     
+    .item {
+        flex-direction: column;
+        height: 90rem;
+    }
+    
+    .canvas {
+        flex: 1 1 55%;
+    }
+    
+    .text {
+        flex: 1 1 45%;
+        padding: 5rem;
+    }
+    
+    .number {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: Phone) {
+    .project {
+        padding: sectionMediaPhone sectionMediaPhone;
+    }
+
+    .item {
+        flex-direction: column;
+        height: 65rem;
+    }
+
+    .index {
+        font-size: TitleMedia;
+        margin-bottom: TitleMedia;
+    }
+
+    .canvas {
+        flex: 1 1 50%;
+    }
+    
+    .text {
+        flex: 1 1 50%;
+        padding: 3rem 2rem;
+    }
+    
+    .number {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .introduce {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .tecbox {
+        font-size: 1.2rem;
+    }
+    
+    .link {
+        padding: 1rem 1.5rem;
+    }
+    
+    .img {
+        width: 1.6rem;
+    }
+    
+    .path {
+        font-size: 1.2rem;
+    }
 }
