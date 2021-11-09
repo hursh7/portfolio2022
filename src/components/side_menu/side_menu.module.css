@@ -1,4 +1,4 @@
-@value Main, Grey, ligthGrey, lightPink from '../../common/colors.css';
+@value Main, MainGrey, LigthGrey, lightPink from '../../common/colors.css';
 @value Title, wrapPadding, sectionTopBottom, Phone from '../../common/size.css';
 
 .nav {
@@ -6,11 +6,11 @@
     flex-direction: column;
     align-items: center;
     font-size: 2rem;
-    color: Grey;
+    color: MainGrey;
     position: fixed;
     transform: translate(-50%, -50%);
     top: calc(50% - 8rem);
-    left: 2%;
+    left: 2.5%;
 }
 
 .nav li {

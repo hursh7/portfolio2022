@@ -10,12 +10,12 @@ const SideMenu = () => (
         <ul className={styles.nav}>
             <li>
                 <a href="https://github.com/hursh7" target="_blank"  rel="noreferrer">
-                    <FontAwesomeIcon icon={["fab", "github-square"]} />
+                    <FontAwesomeIcon icon={["fab", "github"]} />
                 </a>
             </li>
             <li>
                 <a href="https://github.com/hursh7" target="_blank"  rel="noreferrer">
-                    <FontAwesomeIcon icon={["fab", "blogger-b"]} />
+                    <FontAwesomeIcon icon={["fas", "comment-dots"]} />
                 </a>
             </li>
             <li>
