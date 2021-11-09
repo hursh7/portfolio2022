@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -16,6 +16,8 @@ library.add(fab, fas);
 function App() {
   const [scrollY, setScrollY] = useState(0);
   const [btnStatus, setBtnStatus] = useState(false);
+  const focusRef = useRef();
+  const IndexRef = useRef();
 
   const handleFollow = () => {
     setScrollY(window.scrollY);
@@ -45,14 +47,44 @@ function App() {
     }
   })
 
+  useEffect(() => {
+    let nodes = [];
+
+    const IndexClickEvent = (node, i) => {
+      nodes.push(node);
+
+      node.addEventListener('click', () => {
+        focusRef.current.children[i].scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      });
+    };
+
+    if (IndexRef.current) {
+      console.log(IndexRef.current.children);
+      [...IndexRef.current.children].map((node, i) => IndexClickEvent(node, i));
+    }
+    return nodes.map((node, i) => node.removeEventListener('click', IndexClickEvent(node, i)));
+  }, []);
+
   return (
   <div className={styles.wrap}>
     <Header onReset={handleTop} />
     <SideMenu />
+    <div>
+      <div ref={IndexRef}>
+        <div className={styles.test}>about</div>
+        <div className={styles.test}>tech</div>
+        <div className={styles.test}>project</div>
+      </div>
+    </div>
     <Main />
-    <About />
-    <Tech />
-    <Project />
+    <div ref={focusRef}>
+      <About />
+      <Tech />
+      <Project />
+    </div>
     <Footer />
     {
     btnStatus && 

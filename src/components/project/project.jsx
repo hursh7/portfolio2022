@@ -7,7 +7,7 @@ const Project = () => (
             <div className={styles.container}>
                  <div className={styles.item}>
                       <div className={styles.canvas}>
-                           <img className={styles.img} src="/images/" alt="포트폴리오 이미지" />
+                         {/* <img className={styles.img} src={require('../../static/images/test.jpg').default} alt="포트폴리오 이미지" /> */}
                       </div>
                       <div className={styles.text}>
                       <div className={styles.number}>01</div>
@@ -24,11 +24,11 @@ const Project = () => (
                          </div>
                          <div className={styles.linkbox}>
                               <a href="https://github.com/hursh7/business-card-maker" target="_blank"  rel="noreferrer" className={styles.link}>
-                                   <img className={styles.img} src={require('../../static/images/link_github.svg').default} alt="git" />
+                                   <img className={styles.icon} src={require('../../static/images/link_github.svg').default} alt="git" />
                                    <span className={styles.path}>Github</span>
                               </a>
                               <a href="https://hursh7.github.io/business-card-maker/" target="_blank"  rel="noreferrer" className={styles.link}>
-                                   <img className={styles.img} src={require('../../static/images/link_page.svg').default} alt="page" />
+                                   <img className={styles.icon} src={require('../../static/images/link_page.svg').default} alt="page" />
                                    <p className={styles.path}>Page</p>
                               </a>
                          </div>
