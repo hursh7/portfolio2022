@@ -10,13 +10,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #999;
+    background: rgba(255, 255, 255, 0.7);
     z-index: 10;
 }
 
-.nav {
+.indexBox {
     display: flex;
-    background: #fff;
 }
 
 .index {
@@ -113,11 +112,8 @@
         padding: 0 3rem;
     }
 
-    .dropdown {
-        display: block;
-    }
-
     .nav {
+        background-color: #fff;
         position: absolute;
         flex-direction: column;
         width: 100%;
@@ -128,6 +124,10 @@
         transition: all 1s;
         margin-left: 10rem;
         padding: 5rem 0 0 5rem;
+    }
+
+    .indexBox {
+        flex-direction: column;
     }
 
     .false .shadow {
@@ -142,7 +142,6 @@
     .index {
         padding: 2rem 0;
         font-size: 2.5rem;
-
     }
     
     .true {

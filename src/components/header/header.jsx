@@ -7,34 +7,40 @@ import styles from './header.module.css';
 
 library.add(fab, fas);
 const Header = forwardRef(({ onReset }, ref) => {
-    const [dropDown, setDropDown] = useState(false);
+    const [showNav, setShowNav] = useState(false);
 
     const onToggle= () => {
-      setDropDown(dropDown => !dropDown);
-      console.log(`${dropDown}`);
+        setShowNav(showNav => !showNav);
+        console.log(`${showNav}`);
     }
     
-    const toggle = dropDown === false ? styles.true : styles.false;
-    const dropdown = dropDown === false ? styles.nav : styles.hide;
+    const toggle = showNav === false ? styles.true : styles.false;
+    const hide = showNav === false ? styles.nav : styles.hide;
 
     return (
         <header className={styles.header}>
-            <p href="" className={styles.logo} onClick={() => onReset()}>
+            <p href="" className={styles.logo} onClick={() => {
+                onReset()
+                onToggle()
+                }
+            }>
                 Jun .
             </p>
-            <ul className={`${styles.nav} ${dropdown}`} ref={ref}>
-                <li className={styles.index}>
-                    Main
-                </li>
-                <li className={styles.index}>
-                    About
-                </li>
-                <li className={styles.index}>
-                    Skills
-                </li>
-                <li className={styles.index}>
-                    Projects
-                </li>
+            <div className={`${styles.nav} ${hide}`}>
+                <ul className={styles.indexBox} ref={ref} onClick={() => onToggle()}>
+                    <li className={styles.index}>
+                        Main
+                    </li>
+                    <li className={styles.index}>
+                        About
+                    </li>
+                    <li className={styles.index}>
+                        Skills
+                    </li>
+                    <li className={styles.index}>
+                        Projects
+                    </li>
+                </ul>
                 <ul className={styles.link}>
                     <li>
                         <a href="https://github.com/hursh7" target="_blank"  rel="noreferrer">
@@ -52,8 +58,8 @@ const Header = forwardRef(({ onReset }, ref) => {
                         </a>
                     </li>
                 </ul>
-            </ul>
-            <div className={`${styles.true} ${toggle}`} onClick={() => onToggle()} >
+            </div>
+            <div className={`${styles.true} ${toggle}`} onClick={() => onToggle()}>
                 <div className={styles.trigger}>
                     <span></span>
                     <span></span>
