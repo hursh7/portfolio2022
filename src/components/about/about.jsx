@@ -7,8 +7,7 @@ import styles from './about.module.css';
 
 library.add(fas, far);
 const About = forwardRef((props, ref) => {
-
-    return(
+    return (
         <div ref={ref}>
             <section className={styles.about}>
                 <h2 className={styles.index}>About Me</h2>

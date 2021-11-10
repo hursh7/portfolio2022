@@ -69,18 +69,33 @@ function App() {
   // }, []);
 
   const aboutRef = useRef(null);
+  const techRef = useRef(null);
+  const projectRef = useRef(null);
 
-  const indexClickEvent = () => {
+  const onAboutClick = () => {
     aboutRef.current.scrollIntoView({
       behavior: 'smooth',
       block: 'start',
     });
-    console.log('제발 그만해 이러다 다 죽어!!!!!!!!!!!!!!!');
+  };
+  
+  const onTechClick = () => {
+    techRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+  };
+
+  const onProjectClick = () => {
+    projectRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
   };
 
   return (
   <div className={styles.wrap}>
-      <Header onReset={handleTop} indexClickEvent= {indexClickEvent} />
+      <Header onReset={handleTop} onAboutClick={onAboutClick} onTechClick={onTechClick} onProjectClick={onProjectClick} />
       <SideMenu />
         {/* <div ref={IndexRef}>
           <div className={styles.test}>about</div>
@@ -89,8 +104,8 @@ function App() {
         </div> */}
       <Main />
       <About ref={aboutRef} />
-      <Tech />
-      <Project />
+      <Tech ref={techRef} />
+      <Project ref={projectRef} />
       <Footer />
     {
     btnStatus && 

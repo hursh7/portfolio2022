@@ -6,7 +6,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import styles from './header.module.css';
 
 library.add(fab, fas);
-const Header = ({ onReset, indexClickEvent }) => {
+const Header = ({ onReset, onAboutClick, onTechClick, onProjectClick }) => {
     const [dropDown, setDropDown] = useState(false);
 
     const onToggle= () => {
@@ -23,13 +23,13 @@ const Header = ({ onReset, indexClickEvent }) => {
                 Jun .
             </p>
             <ul className={`${styles.nav} ${dropdown}`}>
-                <li className={styles.index} onClick={() => indexClickEvent()}>
+                <li className={styles.index} onClick={() => onAboutClick()}>
                     <a href="#about">About</a>
                 </li>
-                <li className={styles.index}>
+                <li className={styles.index} onClick={() => onTechClick()}>
                     <a href="#skills">Skills</a>
                 </li>
-                <li className={styles.index}>
+                <li className={styles.index} onClick={() => onProjectClick()}>
                     <a href="#home">Projects</a>
                 </li>
                 <li className={styles.index}>
