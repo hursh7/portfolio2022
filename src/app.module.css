@@ -2,7 +2,7 @@
 @value wrapPadding from './common/size.css';
 
 /* test */
-
+.test {margin-top: 10rem;}
 .wrap {
   position: relative;
   overflow: hidden;

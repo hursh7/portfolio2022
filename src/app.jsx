@@ -47,65 +47,37 @@ function App() {
     }
   })
 
-  // useEffect(() => {
-  //   let nodes = [];
+  useEffect(() => {
+    let nodes = [];
 
-  //   const IndexClickEvent = (node, i) => {
-  //     nodes.push(node);
+    const IndexClickEvent = (node, i) => {
+      nodes.push(node);
 
-  //     node.addEventListener('click', () => {
-  //       focusRef.current.children[i].scrollIntoView({
-  //         behavior: 'smooth',
-  //         block: 'start',
-  //       });
-  //     });
-  //   };
+      node.addEventListener('click', () => {
+        focusRef.current.children[i].scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      });
+    };
 
-  //   if (IndexRef.current) {
-  //     console.log(IndexRef.current.children);
-  //     [...IndexRef.current.children].map((node, i) => IndexClickEvent(node, i));
-  //   }
-  //   return nodes.map((node, i) => node.removeEventListener('click', IndexClickEvent(node, i)));
-  // }, []);
-
-  const aboutRef = useRef(null);
-  const techRef = useRef(null);
-  const projectRef = useRef(null);
-
-  const onAboutClick = () => {
-    aboutRef.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  };
-  
-  const onTechClick = () => {
-    techRef.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  };
-
-  const onProjectClick = () => {
-    projectRef.current.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start',
-    });
-  };
+    if (IndexRef.current) {
+      console.log(IndexRef.current.children);
+      [...IndexRef.current.children].map((node, i) => IndexClickEvent(node, i));
+    }
+    return nodes.map((node, i) => node.removeEventListener('click', IndexClickEvent(node, i)));
+  }, []);
 
   return (
   <div className={styles.wrap}>
-      <Header onReset={handleTop} onAboutClick={onAboutClick} onTechClick={onTechClick} onProjectClick={onProjectClick} />
+      <Header onReset={handleTop} ref={IndexRef} />
       <SideMenu />
-        {/* <div ref={IndexRef}>
-          <div className={styles.test}>about</div>
-          <div className={styles.test}>tech</div>
-          <div className={styles.test}>project</div>
-        </div> */}
-      <Main />
-      <About ref={aboutRef} />
-      <Tech ref={techRef} />
-      <Project ref={projectRef} />
+      <div ref={focusRef}>
+        <Main />
+        <About />
+        <Tech />
+        <Project />
+      </div>
       <Footer />
     {
     btnStatus && 

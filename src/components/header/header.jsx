@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, forwardRef } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
@@ -6,7 +6,7 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import styles from './header.module.css';
 
 library.add(fab, fas);
-const Header = ({ onReset, onAboutClick, onTechClick, onProjectClick }) => {
+const Header = forwardRef(({ onReset }, ref) => {
     const [dropDown, setDropDown] = useState(false);
 
     const onToggle= () => {
@@ -22,18 +22,18 @@ const Header = ({ onReset, onAboutClick, onTechClick, onProjectClick }) => {
             <p href="" className={styles.logo} onClick={() => onReset()}>
                 Jun .
             </p>
-            <ul className={`${styles.nav} ${dropdown}`}>
-                <li className={styles.index} onClick={() => onAboutClick()}>
-                    <a href="#about">About</a>
-                </li>
-                <li className={styles.index} onClick={() => onTechClick()}>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li className={styles.index} onClick={() => onProjectClick()}>
-                    <a href="#home">Projects</a>
+            <ul className={`${styles.nav} ${dropdown}`} ref={ref}>
+                <li className={styles.index}>
+                    Main
                 </li>
                 <li className={styles.index}>
-                    <a href="#home">Resume</a>
+                    About
+                </li>
+                <li className={styles.index}>
+                    Skills
+                </li>
+                <li className={styles.index}>
+                    Projects
                 </li>
                 <ul className={styles.link}>
                     <li>
@@ -63,6 +63,6 @@ const Header = ({ onReset, onAboutClick, onTechClick, onProjectClick }) => {
             </div>
         </header>
     )
-};
+});
 
 export default Header;

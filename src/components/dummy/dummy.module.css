@@ -1,0 +1,49 @@
+@value Main, MainGrey, LigthGrey from '../../common/colors.css';
+@value wrapPadding, Pad, Phone from '../../common/size.css';
+
+.header {
+    position: fixed;
+    top: 8rem;
+    width: 100%;
+    height: 8rem;
+    padding: 0 wrapPadding;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #555;
+    z-index: 10;
+}
+
+.nav {
+    display: flex;
+    background: #fff;
+}
+
+.index {
+    padding: 0 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: MainGrey;
+    transition: all 0.2s ease-in;
+}
+
+.index:hover {
+    cursor: pointer;
+    color: Main;
+}
+
+.resume {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: MainGrey;
+}
+
+.logo {
+    font-size: 3.5rem;
+    letter-spacing: -4px;
+    color: Main;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
