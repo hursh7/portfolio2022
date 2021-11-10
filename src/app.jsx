@@ -47,45 +47,51 @@ function App() {
     }
   })
 
-  useEffect(() => {
-    let nodes = [];
+  // useEffect(() => {
+  //   let nodes = [];
 
-    const IndexClickEvent = (node, i) => {
-      nodes.push(node);
+  //   const IndexClickEvent = (node, i) => {
+  //     nodes.push(node);
 
-      node.addEventListener('click', () => {
-        focusRef.current.children[i].scrollIntoView({
-          behavior: 'smooth',
-          block: 'start',
-        });
-      });
-    };
+  //     node.addEventListener('click', () => {
+  //       focusRef.current.children[i].scrollIntoView({
+  //         behavior: 'smooth',
+  //         block: 'start',
+  //       });
+  //     });
+  //   };
 
-    if (IndexRef.current) {
-      console.log(IndexRef.current.children);
-      [...IndexRef.current.children].map((node, i) => IndexClickEvent(node, i));
-    }
-    return nodes.map((node, i) => node.removeEventListener('click', IndexClickEvent(node, i)));
-  }, []);
+  //   if (IndexRef.current) {
+  //     console.log(IndexRef.current.children);
+  //     [...IndexRef.current.children].map((node, i) => IndexClickEvent(node, i));
+  //   }
+  //   return nodes.map((node, i) => node.removeEventListener('click', IndexClickEvent(node, i)));
+  // }, []);
+
+  const aboutRef = useRef(null);
+
+  const indexClickEvent = () => {
+    aboutRef.current.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+    });
+    console.log('제발 그만해 이러다 다 죽어!!!!!!!!!!!!!!!');
+  };
 
   return (
   <div className={styles.wrap}>
-    <Header onReset={handleTop} />
-    <SideMenu />
-    <div>
-      <div ref={IndexRef}>
-        <div className={styles.test}>about</div>
-        <div className={styles.test}>tech</div>
-        <div className={styles.test}>project</div>
-      </div>
-    </div>
-    <Main />
-    <div ref={focusRef}>
-      <About />
+      <Header onReset={handleTop} indexClickEvent= {indexClickEvent} />
+      <SideMenu />
+        {/* <div ref={IndexRef}>
+          <div className={styles.test}>about</div>
+          <div className={styles.test}>tech</div>
+          <div className={styles.test}>project</div>
+        </div> */}
+      <Main />
+      <About ref={aboutRef} />
       <Tech />
       <Project />
-    </div>
-    <Footer />
+      <Footer />
     {
     btnStatus && 
     <button className={`${styles.button} ${styles.active}`} onClick={handleTop}>

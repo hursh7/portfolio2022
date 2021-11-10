@@ -7,7 +7,7 @@ import styles from './side_menu.module.css';
 
 library.add(fab, fas);
 const SideMenu = () => (
-        <ul className={styles.nav}>
+        <ul className={styles.link}>
             <li>
                 <a href="https://github.com/hursh7" target="_blank"  rel="noreferrer">
                     <FontAwesomeIcon icon={["fab", "github"]} />
