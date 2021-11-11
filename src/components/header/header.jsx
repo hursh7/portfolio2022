@@ -29,9 +29,6 @@ const Header = forwardRef(({ onReset }, ref) => {
             <div className={`${styles.nav} ${hide}`}>
                 <ul className={styles.indexBox} ref={ref} onClick={() => onToggle()}>
                     <li className={styles.index}>
-                        Main
-                    </li>
-                    <li className={styles.index}>
                         About
                     </li>
                     <li className={styles.index}>
@@ -39,6 +36,9 @@ const Header = forwardRef(({ onReset }, ref) => {
                     </li>
                     <li className={styles.index}>
                         Projects
+                    </li>
+                    <li className={styles.index}>
+                        Contact
                     </li>
                 </ul>
                 <ul className={styles.link}>

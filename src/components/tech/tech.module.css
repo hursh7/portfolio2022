@@ -2,6 +2,7 @@
 @value Title, TitleMedia, wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, Pad, Phone from '../../common/size.css';
 
 .tech {
+    position: relative;
     padding: sectionTopBottom wrapPadding;
 }
 

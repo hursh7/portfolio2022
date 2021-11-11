@@ -72,13 +72,13 @@ function App() {
   <div className={styles.wrap}>
       <Header onReset={handleTop} ref={IndexRef} />
       <SideMenu />
-      <div ref={focusRef}>
         <Main />
+      <div ref={focusRef}>
         <About />
         <Tech />
         <Project />
+        <Footer />
       </div>
-      <Footer />
     {
     btnStatus && 
     <button className={`${styles.button} ${styles.active}`} onClick={handleTop}>

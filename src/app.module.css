@@ -1,8 +1,7 @@
-@value Main, ligthGrey from './common/colors.css';
+@value Main, MainGrey, LigthGrey from './common/colors.css';
 @value wrapPadding from './common/size.css';
 
 /* test */
-.test {margin-top: 10rem;}
 .wrap {
   position: relative;
   overflow: hidden;
@@ -16,7 +15,7 @@
   opacity: 0;
   bottom: 2rem;
   right: 2rem;
-  color: ligthGrey;
+  color: LigthGrey;
   font-size: 4.5rem;
   transition: 0.2s all ease-in;
 }
@@ -31,8 +30,5 @@
   color: Main;
 }
 
-.test {
-  border: 1px solid #000; margin-right: 10px;
-}
 /* test */
 
