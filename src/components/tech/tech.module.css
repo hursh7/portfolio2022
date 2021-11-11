@@ -1,5 +1,5 @@
-@value Main, LigthGrey, ligthGrey, MainOrange from '../../common/colors.css';
-@value Title, TitleMedia, wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, Pad, Phone from '../../common/size.css';
+@value Main, MainGrey, LightGrey, MainOrange from '../../common/colors.css';
+@value wrapPadding, sectionTopBottom, MediaLaptop, MediaPad, MediaMobile, FontSmall, FontRegular, FontMedium , Title from '../../common/size.css';
 
 .tech {
     position: relative;
@@ -17,7 +17,7 @@
 .sub {
     font-size: 2.5rem;
     text-align: center;
-    color: LigthGrey;
+    color: LightGrey;
 }
 
 .container {
@@ -62,29 +62,27 @@
     font-weight: 500;
 }
 
-@media screen and (max-width: Pad) {
+@media screen and (max-width: MediaPad) {
     .tech {
-        padding: sectionMediaPad wrapPadding;
+        padding: calc(sectionTopBottom / 2) wrapPadding;
     }
 }
 
-@media screen and (max-width: Phone) {
+@media screen and (max-width: MediaMobile) {
     .tech {
-        padding: sectionMediaPhone 5rem;
+        padding: calc(sectionTopBottom / 2) 5rem;
     }
 
     .index {
-        font-size: TitleMedia;
-        font-weight: 500;
-        text-align: center;
-        margin-bottom: TitleMedia;
+        font-size: calc(Title / 2);
+        margin-bottom: calc(Title / 2);
     }
 
     .sub {
-        font-size: 1.8rem;
+        font-size: FontRegular;
     }
 
     .item {
-        margin: 1.8rem 0;
+        margin: 1.2rem 0;
     }
 }

@@ -1,5 +1,5 @@
-@value Main, LightMain, MainGrey, LigthGrey, MainOrange, MainBlue from '../../common/colors.css';
-@value Title, TitleMedia, wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, mainText, Notebook, Pad, Phone, ResponsiveBg, ResponsivePaddingBottom from '../../common/size.css';
+@value Main, MainGrey, LightGrey, MainOrange from '../../common/colors.css';
+@value wrapPadding, sectionTopBottom, MediaLaptop, MediaPad, MediaMobile, FontSmall, FontRegular, FontMedium , Title from '../../common/size.css';
 
 .about {
     padding: sectionTopBottom wrapPadding;
@@ -28,17 +28,17 @@
 }
 
 .img {
-    width: 50rem;
-    height: 50rem;
+    width: 45rem;
+    height: 45rem;
 }
 
 .info {
     display: flex;
-    font-size: 1.6rem;
+    font-size: FontRegular;
 }
 
 .itembox {
-    line-height: 2.3;
+    line-height: 2.5;
 }
 
 .item {
@@ -47,15 +47,15 @@
 }
 
 .icon {
-    font-size: 2rem;
+    font-size: FontMedium;
     color: Main;
     margin-right: 1.5rem;
 }
 
 .infotext {
     font-weight: 300;
-    line-height: 2.3;
-    margin-left: 5rem;
+    line-height: 2.5;
+    margin-left: 6rem;
 }
 
 .history {
@@ -85,13 +85,12 @@
 
 .icon2 {
     width: 4rem;
-    margin-right: 2rem;
+    margin-right: FontMedium;
 }
 
 .detail {
     position: relative;
-    font-size: 1.6rem;
-    /* border-left: 1px solid About; */
+    font-size: FontRegular;
     padding-left: 5rem;
     margin-bottom: 3rem;
 }
@@ -119,58 +118,43 @@
     border: 1px solid MainOrange;
     background-color: MainOrange;
     background-clip: content-box;
-    padding: 0.2rem;
+    padding: 0.FontMedium;
 }
 
 .detail li:nth-child(1) {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 600;
     color: MainGrey;
     margin-bottom: 0.5rem;
 }
 .detail li:nth-child(2) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    color: LigthGrey;
+    color: LightGrey;
     margin-bottom: 1.4rem;
 }
 .detail li:nth-child(3) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: MainOrange;
 }
 
-@media screen and (max-width: Notebook) {
+@media screen and (max-width: MediaLaptop) {
     .profile {
-        margin-bottom: ResponsivePaddingBottom;
-    }
-    
-    .history {
-        padding: 0 15rem;
-        display: flex;
-        flex: 1 1 100%;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    
-    .content {
         margin-bottom: 5rem;
     }
 }
 
-@media screen and (max-width: Pad) {
+@media screen and (max-width: MediaPad) {
     .about {
-        padding: sectionMediaPad wrapPadding;
+        padding: calc(sectionTopBottom / 2) wrapPadding;
     }
-    
-    .history {
-        padding: 0 8rem;
-    }
+
 }
 
-@media screen and (max-width: Phone) {
+@media screen and (max-width: MediaMobile) {
     .about {
-        padding: sectionMediaPhone 5rem;
+        padding: calc(sectionTopBottom / 2) 5rem;
     }
 
     .history {
@@ -178,16 +162,14 @@
     }
     
     .index {
-        font-size: TitleMedia;
-        font-weight: 500;
-        text-align: center;
-        margin-bottom: TitleMedia;
+        font-size: calc(Title / 2);
+        margin-bottom: calc(Title / 2);
     }
     
     .img {
-        width: ResponsiveBg;
-        height: ResponsiveBg;
-        margin-bottom: 3rem;
+        width: calc(45rem / 1.5);
+        height: calc(45rem / 1.5);
+        margin-bottom: 2rem;
     }
     
     .info {
@@ -195,16 +177,15 @@
     }
     
     .icon {
-        font-size: 1.6rem;
+        font-size: FontRegular;
     }
     
     .history {
-        margin-top: -5rem;
         padding: 0;
     }
 
     .content {
-        margin-bottom: 2rem;
+        margin-bottom: FontMedium;
         width: 100%;
         text-align: center;
     }
@@ -216,7 +197,7 @@
         justify-content: center;
         font-size: 1.8rem;
         font-weight: 400;
-        margin-bottom: 2rem;
+        margin-bottom: FontMedium;
     }
     
     .icon2 {
@@ -226,7 +207,7 @@
     
     .detail {
         position: relative;
-        font-size: 1.6rem;
+        font-size: FontRegular;
         padding-left: 0;
     }
 
@@ -239,15 +220,15 @@
     }
     
     .detail li:nth-child(1) {
-        font-size: 1.6rem;
+        font-size: FontRegular;
         margin-bottom: 0.3rem;
     }
     .detail li:nth-child(2) {
-        font-size: 1.2rem;
-        margin-bottom: 1.2rem;
+        font-size: FontSmall;
+        margin-bottom: FontSmall;
     }
     .detail li:nth-child(3) {
-        font-size: 1.2rem;
+        font-size: FontSmall;
     }
 }
 

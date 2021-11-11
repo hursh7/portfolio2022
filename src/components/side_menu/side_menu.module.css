@@ -1,20 +1,21 @@
-@value Main, MainGrey, LigthGrey, lightPink from '../../common/colors.css';
-@value Title, wrapPadding, sectionTopBottom, Phone from '../../common/size.css';
+@value Main, MainGrey, LightGrey from '../../common/colors.css';
+@value  MediaMobile, FontMedium from '../../common/size.css';
 
 .link {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2rem;
+    font-size: FontMedium;
     color: MainGrey;
     position: fixed;
     transform: translate(-50%, -50%);
-    top: calc(50% - 8rem);
+    top: 50%;
     left: 2.5%;
+    z-index: 10;
 }
 
 .link li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     transition: .1s all ease-in;
 }
 
@@ -23,7 +24,7 @@
     color: Main;
 }
 
-@media screen and (max-width: Phone) {
+@media screen and (max-width: MediaMobile) {
     .link {
        display: none;
     }

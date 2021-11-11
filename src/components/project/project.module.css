@@ -1,5 +1,5 @@
-@value Main, MainGrey, LigthGrey, lightPink, Button from '../../common/colors.css';
-@value Title, TitleMedia, wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, Notebook, Pad, Phone from '../../common/size.css';
+@value Main, MainGrey, LightGrey, MainOrange from '../../common/colors.css';
+@value wrapPadding, sectionTopBottom, MediaLaptop, MediaPad, MediaMobile, FontSmall, FontRegular, FontMedium , Title from '../../common/size.css';
 
 .project {
     padding: sectionTopBottom wrapPadding;
@@ -54,7 +54,7 @@
 }
 
 .introduce {
-    font-size: 1.6rem;
+    font-size: FontRegular;
     margin-bottom: 1rem;
 }
 
@@ -76,7 +76,7 @@
     display: flex;
     align-items: center;
     background-color: MainGrey;
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     margin: 2rem 1rem 0 0;
 }
 
@@ -85,22 +85,18 @@
 }
 
 .icon {
-    width: 2.3rem;
+    width: FontMedium;
     margin-right: 0.5rem;
 }
 
 .path {
     position: relative;
-    font-size: 1.4rem;
+    font-size: FontSmall;
     font-weight: 300;
     color: #fff;
 }
 
-@media screen and (max-width: Notebook) {
-    .project {
-        padding: sectionTopBottom wrapPadding;
-    }
-    
+@media screen and (max-width: MediaLaptop) {
     .canvas {
         flex: 1 1 55%;
     }
@@ -110,9 +106,9 @@
     }
 }
 
-@media screen and (max-width: Pad) {
+@media screen and (max-width: MediaPad) {
     .project {
-        padding: sectionTopBottom sectionMediaPad;
+        padding: sectionTopBottom 5rem;
     }
     
     .item {
@@ -135,9 +131,9 @@
     }
 }
 
-@media screen and (max-width: Phone) {
+@media screen and (max-width: MediaMobile) {
     .project {
-        padding: sectionMediaPhone sectionMediaPhone;
+        padding: calc(sectionTopBottom / 2) 2rem;
     }
 
     .item {
@@ -146,8 +142,8 @@
     }
 
     .index {
-        font-size: TitleMedia;
-        margin-bottom: TitleMedia;
+        font-size: calc(Title / 2);
+        margin-bottom: calc(Title / 2);
     }
 
     .canvas {
@@ -160,12 +156,12 @@
     }
     
     .number {
-        font-size: 1.6rem;
+        font-size: FontRegular;
         margin-bottom: 0.5rem;
     }
     
     .title {
-        font-size: 2rem;
+        font-size: FontMedium;
         margin-bottom: 2rem;
     }
     
@@ -175,18 +171,10 @@
     }
     
     .tecbox {
-        font-size: 1.2rem;
+        font-size: FontSmall;
     }
     
     .link {
         padding: 1rem 1.5rem;
-    }
-
-    .icon {
-        width: 2rem;
-    }
-    
-    .path {
-        font-size: 1.2rem;
     }
 }

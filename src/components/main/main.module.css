@@ -1,5 +1,5 @@
-@value Main, MainGrey, LigthGrey, MainOrange from '../../common/colors.css';
-@value wrapPadding, sectionTopBottom, sectionMediaPad, sectionMediaPhone, mainText, ResponsiveBg, Notebook, Phone from '../../common/size.css';
+@value Main, MainGrey, LightGrey, MainOrange from '../../common/colors.css';
+@value wrapPadding, sectionTopBottom, MediaLaptop, MediaMobile, MainDiv, FontSmall, FontRegular from '../../common/size.css';
 
 .main {
     position: relative;
@@ -7,18 +7,16 @@
     justify-content: space-evenly;
     align-items: center;
     padding: sectionTopBottom wrapPadding;
-    /* background-color: rgba(153, 153, 153, 0.116); */
 }
 
 .text {
-    width: 65rem;
+    width: MainDiv;
 }
 
 .name {
-    font-size: 1.6rem;
+    font-size: FontRegular;
     color: MainOrange;
     letter-spacing: -1px;
-    text-indent: mainText;
 }
 
 .position {
@@ -27,24 +25,22 @@
     color: MainGrey;
     letter-spacing: -0.5rem;
     line-height: 9rem;
-    margin-bottom: 3rem;
+    margin: 0 0 3rem -1rem;
 }
 
 .introduce {
-    padding-left: mainText;
     font-size: 1.8rem;
     line-height: 1.5;
-    color: LigthGrey;
+    color: LightGrey;
     margin-bottom: 3rem;
 }
 
 .button {
     user-select: none;
-    font-size: 1.6rem;
+    font-size: FontRegular;
     background-color: MainOrange;
     border-radius: 0.5rem;
     padding: 1.2rem 1.5rem;
-    margin-left: mainText;
     color: #fff;
     transition: all .3s ease-in;
 }
@@ -55,8 +51,8 @@
 }
 
 .img {
-    width: 65rem;
-    height: 65rem;
+    width: MainDiv;
+    height: MainDiv;
     background: url('../../static/images/main_bg11.svg') no-repeat center;
 }
 
@@ -71,55 +67,51 @@
     opacity: .2;
 } */
 
-@media screen and (max-width: Notebook) {
+@media screen and (max-width: MediaLaptop) {
     .main {
-        padding: sectionMediaPad 0;
+        padding: calc(sectionTopBottom / 2) 0;
         flex-direction: column-reverse;
         text-align: center;
     }
-
-    .img {
-        margin-bottom: 1rem;
-    }
 }
 
-@media screen and (max-width: Phone) {
+@media screen and (max-width: MediaMobile) {
     .main {
-        padding: sectionMediaPhone 0;
+        padding: calc(sectionTopBottom / 4) 0;
     }
     
     .text {
-        width: 35rem;
+        width: calc(MainDiv / 2);
     }
     
     .name {
-        font-size: 1.2rem;
+        font-size: FontSmall;
         color: Button;
         letter-spacing: -1px;
         text-indent: mainText;
     }
     
     .position {
-        font-size: 3.5rem;
+        font-size: 3rem;
         letter-spacing: -0.3rem;
-        line-height: 4rem;
+        line-height: 3rem;
         margin-bottom: 1rem;
     }
     
     .introduce {
         padding-left: mainText;
-        font-size: 1.4rem;
+        font-size: FontSmall;
         line-height: 1.5;
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
     
     .button {
-        font-size: 1.2rem;
+        font-size: FontSmall;
     }
     
     .img {
-        width: ResponsiveBg;
-        height: ResponsiveBg;
+        width: calc(MainDiv / 2);
+        height: calc(MainDiv / 2);
     }
 }
 

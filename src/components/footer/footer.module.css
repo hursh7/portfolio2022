@@ -1,6 +1,9 @@
 @value Main, MainGrey, Grey, LigthGrey, lightPink, MainOrange from '../../common/colors.css';
 @value Title, wrapPadding, sectionTopBottom from '../../common/size.css';
 
+@value Main, MainGrey, LightGrey, MainOrange from '../../common/colors.css';
+@value wrapPadding, sectionTopBottom, MediaLaptop, MediaPad, MediaMobile, FontSmall, FontRegular, FontMedium , Title from '../../common/size.css';
+
 .footer {
     position: relative;
     display: flex;

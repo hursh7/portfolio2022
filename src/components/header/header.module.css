@@ -1,5 +1,5 @@
-@value Main, MainGrey, LigthGrey from '../../common/colors.css';
-@value wrapPadding, Pad, Phone from '../../common/size.css';
+@value Main, MainGrey, LightGrey from '../../common/colors.css';
+@value wrapPadding, MediaMobile, FontRegular from '../../common/size.css';
 
 .header {
     position: fixed;
@@ -10,7 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(255, 255, 255, 0.7);
+    /* background: rgba(255, 255, 255, 0.7); */
+    background: #222;
     z-index: 10;
 }
 
@@ -20,7 +21,7 @@
 
 .index {
     padding: 0 2.5rem;
-    font-size: 1.6rem;
+    font-size: FontRegular;
     font-weight: 500;
     color: MainGrey;
     transition: all 0.2s ease-in;
@@ -99,7 +100,7 @@
     .link {
         display: none;
         font-size: 3rem;
-        color: LigthGrey;
+        color: LightGrey;
         margin-top: 2rem;
     }
     
@@ -108,7 +109,7 @@
         transition: .1s all ease-in;
     }
 
-@media screen and (max-width: Phone) {
+@media screen and (max-width: MediaMobile) {
     .header {
         padding: 0 3rem;
     }

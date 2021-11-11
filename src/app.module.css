@@ -1,5 +1,5 @@
-@value Main, MainGrey, LigthGrey from './common/colors.css';
-@value wrapPadding from './common/size.css';
+@value Main, MainGrey, LightGrey from './common/colors.css';
+@value MediaMobile from './common/size.css';
 
 /* test */
 .wrap {
@@ -15,7 +15,7 @@
   opacity: 0;
   bottom: 2rem;
   right: 2rem;
-  color: LigthGrey;
+  color: LightGrey;
   font-size: 4.5rem;
   transition: 0.2s all ease-in;
 }
@@ -28,6 +28,16 @@
   transition: 0.2s all ease-in;
   cursor: pointer;
   color: Main;
+}
+
+@media screen and (max-width: MediaMobile) {
+  .button {
+    bottom: 2rem;
+    right: 2rem;
+    color: LightGrey;
+    font-size: 3.5rem;
+    transition: 0.2s all ease-in;
+  }
 }
 
 /* test */

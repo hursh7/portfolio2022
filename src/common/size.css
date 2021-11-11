@@ -1,13 +1,16 @@
 @value wrapPadding: 10rem;
 @value sectionTopBottom: 10rem;
-@value sectionMediaPad: 5rem;
-@value sectionMediaPhone: 2rem;
-@value mainText: 1rem;
-@value Title: 3.5rem;
-@value subTitle: 2.5rem;
-@value TitleMedia: 2.5rem;
-@value Notebook: 1280px;
-@value Pad: 1050px;
-@value Phone: 720px;
-@value ResponsiveBg: 30rem;
-@value ResponsivePaddingBottom: 10rem;
+
+@value MainDiv: 64rem;
+
+@value FontSmall: 1.2rem;
+@value FontRegular: 1.6rem;
+@value FontMedium: 2rem;
+
+@value Title: 4rem;
+
+@value MediaLaptop: 1280px;
+@value MediaPad: 1050px;
+@value MediaMobile: 720px;
+/* @value ResponsiveBg: 30rem;
+@value ResponsivePaddingBottom: 10rem; */
