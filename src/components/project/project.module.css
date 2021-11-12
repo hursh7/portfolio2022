@@ -24,16 +24,24 @@
     width: 100%;
     height: 55rem;
     background-color: rgb(241, 241, 241);
+    border-radius: 0.5rem;
     overflow: hidden;
     margin-bottom: 5rem;
 }
 
 .canvas {
-    background: url('../../static/images/test.jpg') no-repeat center center;
     overflow: hidden;
     flex: 1 1 60%;
     width: 100%;
     height: 100%;
+}
+
+.canvas01 {
+    background: url('../../static/images/project_img01.jpg') no-repeat center center;
+}
+
+.canvas02 {
+    background: url('../../static/images/project_img02.jpg') no-repeat center center;
 }
 
 .text {
@@ -76,6 +84,7 @@
     display: flex;
     align-items: center;
     background-color: MainGrey;
+    border-radius: 0.2rem;
     padding: 1rem 1.5rem;
     margin: 2rem 1rem 0 0;
 }
