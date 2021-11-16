@@ -10,23 +10,16 @@
     font-size: 1.4rem;
     font-weight: 300;
     color: #fff;
-    background: MainGrey;
-    /* background: #444; */
+    background: #222;
 }
 
-/* .position {
-    user-select: none;
-    font-size: 4rem;
-    letter-spacing: -2px;
+.index {
+    font-size: 3rem;
+    font-weight: 500;
     color: #fff;
-} */
-
-.logo {
-    user-select: none;
-    font-size: 3.5rem;
-    letter-spacing: -2px;
-    color: #fff;
-    margin-bottom: 2rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    padding-top: 5rem;
 }
 
 .text {
@@ -38,11 +31,11 @@
 .ref {
     display: flex;
     align-items: center;
+    margin-bottom: 2.5rem;
 }
 
 .ref a {
-    margin-right: 1rem;
-    margin-bottom: 0;
+    margin-left: 1rem;
 }
 
 img {
@@ -50,13 +43,12 @@ img {
 }
 
 .box {
-    /* background-color: #333; */
     border-top: 1px solid rgba(255, 255, 255, 0.096);
     padding-top: 1rem;
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
 }
 
 .copyright {
