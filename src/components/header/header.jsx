@@ -11,7 +11,6 @@ const Header = forwardRef(({ onReset }, ref) => {
 
     const onToggle= () => {
         setShowNav(showNav => !showNav);
-        console.log(`${showNav}`);
     }
     
     const toggle = showNav === false ? styles.true : styles.false;

@@ -19,6 +19,7 @@ function App() {
   const focusRef = useRef();
   const IndexRef = useRef();
 
+
   const handleFollow = () => {
     setScrollY(window.scrollY);
     if(scrollY > 100) {
@@ -62,7 +63,6 @@ function App() {
     };
 
     if (IndexRef.current) {
-      console.log(IndexRef.current.children);
       [...IndexRef.current.children].map((node, i) => IndexClickEvent(node, i));
     }
     return nodes.map((node, i) => node.removeEventListener('click', IndexClickEvent(node, i)));
@@ -72,7 +72,7 @@ function App() {
   <div className={styles.wrap}>
       <Header onReset={handleTop} ref={IndexRef} />
       <SideMenu />
-        <Main />
+      <Main />
       <div ref={focusRef}>
         <About />
         <Tech />
