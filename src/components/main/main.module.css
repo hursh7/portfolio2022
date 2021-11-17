@@ -42,12 +42,11 @@
     border-radius: 0.5rem;
     padding: 1.2rem 1.5rem;
     color: #fff;
-    transition: all .3s ease-in;
 }
 
 .button:hover {
     cursor: pointer;
-    opacity: .8;
+    background-color: #f0805e;
 }
 
 .img {

@@ -9,7 +9,7 @@ import styles from './footer.module.css';
 library.add(fab, fas);
 const Footer = () => (
         <footer className={styles.footer}>
-            <h2 className={styles.index}>Contact Me</h2>
+            <h2 className={styles.index}>Contact</h2>
             <ContactForm />
             <ul className={styles.text}>
                 <li>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</li>
@@ -17,13 +17,13 @@ const Footer = () => (
             </ul>
             <div className={styles.ref}>
                 <span>by.</span>
-                <a href="https://iconape.com/" target="_blank"  rel="noreferrer" className={styles.link}>
+                <a href="https://iconape.com/" target="_blank" rel="noreferrer" className={styles.link}>
                     <img src={require('../../static/images/footer_ape.svg').default} alt="iconape" />
                 </a>
-                <a href="https://www.flaticon.com/" target="_blank"  rel="noreferrer" className={styles.link}>
+                <a href="https://www.flaticon.com/" target="_blank" rel="noreferrer" className={styles.link}>
                     <img src={require('../../static/images/footer_fla.svg').default} alt="flaticon" />
                 </a>
-                <a href="https://www.freepik.com/" target="_blank"  rel="noreferrer" className={styles.link}>
+                <a href="https://www.freepik.com/" target="_blank" rel="noreferrer" className={styles.link}>
                     <img src={require('../../static/images/footer_freepik.svg').default} alt="freepik" />
                 </a>
             </div>
@@ -31,22 +31,22 @@ const Footer = () => (
                 <p className={styles.copyright}>&copy; 2021 Junhyung Park. All rights reserved.</p>
                 <ul className={styles.link}>
                     <li>
-                        <a href="https://github.com/hursh7" target="_blank"  rel="noreferrer">
+                        <a href="https://github.com/hursh7" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={["fab", "github"]} />
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/hursh7" target="_blank"  rel="noreferrer">
+                        <a href="https://github.com/hursh7" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={["fas", "comment-dots"]} />
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:junhp1994@gmail.com" target="_blank"  rel="noreferrer">
+                        <a href="mailto:junhp1994@gmail.com" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={["fab", "google"]} />
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:junhp1994@gmail.com" target="_blank"  rel="noreferrer">
+                        <a href="mailto:junhp1994@gmail.com" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={["fas", "id-badge"]} />
                         </a>
                     </li>
