@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import styles from './contact_form.module.css';
 
-const ContactForm = () => {
+const ContactForm = ({ useScrollFadeIn }) => {
     const [user, setUser] = useState({
         name: '',
         mail: '',
@@ -24,6 +24,10 @@ const ContactForm = () => {
             mail: '',
             message: ''
         });
+    };
+
+    const animatedItem = {
+        0: useScrollFadeIn('down', 1, 0),
     };
     
 
@@ -62,7 +66,7 @@ const ContactForm = () => {
     }
 
     return (
-        <form className={styles.form} onSubmit={sendEmail}>
+        <form className={styles.form} onSubmit={sendEmail} {...animatedItem[0]}>
             <label htmlFor="name">
                 <p className={styles.label}>name</p>
                 <input id="name" className={styles.input} type="text" name="name" value={name} placeholder="Your Name" onChange={onChange} />

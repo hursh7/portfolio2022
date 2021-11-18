@@ -11,6 +11,7 @@ import About from './components/about/about';
 import Tech from './components/tech/tech';
 import Project from './components/project/project';
 import Footer from './components/footer/footer';
+import { useScrollFadeIn } from './hooks';
 
 library.add(fab, fas);
 function App() {
@@ -18,7 +19,6 @@ function App() {
   const [btnStatus, setBtnStatus] = useState(false);
   const focusRef = useRef();
   const IndexRef = useRef();
-
 
   const handleFollow = () => {
     setScrollY(window.scrollY);
@@ -72,12 +72,12 @@ function App() {
   <div className={styles.wrap}>
       <Header onReset={handleTop} ref={IndexRef} />
       <SideMenu />
-      <Main />
+      <Main useScrollFadeIn={useScrollFadeIn} />
       <div ref={focusRef}>
-        <About />
-        <Tech />
-        <Project />
-        <Footer />
+        <About useScrollFadeIn={useScrollFadeIn} />
+        <Tech useScrollFadeIn={useScrollFadeIn} />
+        <Project useScrollFadeIn={useScrollFadeIn} />
+        <Footer useScrollFadeIn={useScrollFadeIn} />
       </div>
     {
     btnStatus && 

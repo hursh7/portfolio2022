@@ -1,13 +1,19 @@
 import React, { forwardRef } from 'react';
 import styles from './project.module.css';
 
-const Project = forwardRef((props, ref) => {
+const Project = forwardRef(({ useScrollFadeIn }, ref) => {
+     const animatedItem = {
+          0: useScrollFadeIn('right', 1, 0),
+          1: useScrollFadeIn('left', 1, 0.1),
+          2: useScrollFadeIn('right', 1, 0.2),
+      };
+
      return (
           <div ref={ref}>
                <section className={styles.project}>
                     <h2 className={styles.index}>Projects</h2>
                     <div className={styles.container}>
-                         <div className={styles.item}>
+                         <div className={styles.item} {...animatedItem[0]}>
                               <div className={`${styles.canvas} ${styles.canvas01}`}></div>
                               <div className={styles.text}>
                               <div className={styles.number}>01</div>
@@ -34,7 +40,7 @@ const Project = forwardRef((props, ref) => {
                                    </div>
                               </div>
                          </div>
-                         <div className={styles.item}>
+                         <div className={styles.item} {...animatedItem[1]}>
                               <div className={`${styles.canvas} ${styles.canvas02}`}></div>
                               <div className={styles.text}>
                               <div className={styles.number}>02</div>
@@ -59,18 +65,17 @@ const Project = forwardRef((props, ref) => {
                                    </div>
                               </div>
                          </div>
-                         <div className={styles.item}>
-                              <div className={`${styles.canvas} ${styles.canvas02}`}></div>
+                         <div className={styles.item} {...animatedItem[2]}>
+                              <div className={`${styles.canvas} ${styles.canvas03}`}></div>
                               <div className={styles.text}>
-                              <div className={styles.number}>02</div>
-                                   <h3 className={styles.title}>Youtube (CloneCoding)</h3>
+                              <div className={styles.number}>03</div>
+                                   <h3 className={styles.title}>Portfolio</h3>
                                    <p className={styles.introduce}>
                                         유튜브 클론코딩입니다. React로 개발 하였고, netlify로 배포 하였습니다. 포스트맨 툴을 사용해 유튜브 APIs 데이터를 받아와서 인기 동영상 목록 보여주기, 검색 기능 등을 구현 하였습니다.   
                                    </p>
                                    <div className={styles.tecbox}>
                                         <div className={styles.tec}>#React</div>
                                         <div className={styles.tec}>#PostCSS</div>
-                                        <div className={styles.tec}>#Postman</div>
                                    </div>
                                    <div className={styles.linkbox}>
                                         <a href="https://github.com/hursh7/youtube-clone" target="_blank"  rel="noreferrer" className={styles.link}>

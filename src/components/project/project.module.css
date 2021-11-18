@@ -44,6 +44,10 @@
     background: url('../../static/images/project_img02.jpg') no-repeat center center;
 }
 
+.canvas03 {
+    background: url('../../static/images/project_img03.jpg') no-repeat center center;
+}
+
 .text {
     overflow: hidden;
     flex: 1 1 40%;

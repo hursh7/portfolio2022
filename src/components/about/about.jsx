@@ -6,13 +6,18 @@ import { far } from "@fortawesome/free-regular-svg-icons";
 import styles from './about.module.css';
 
 library.add(fas, far);
-const About = forwardRef((props, ref) => {
+const About = forwardRef(({ useScrollFadeIn }, ref) => {
+    const animatedItem = {
+        0: useScrollFadeIn('right', 1, 0),
+        1: useScrollFadeIn('left', 1, 0.1),
+    };
+
     return (
         <div ref={ref}>
             <section className={styles.about}>
                 <h2 className={styles.index}>About Me</h2>
                 <div className={styles.container}>
-                    <div className={styles.profile}>
+                    <div className={styles.profile} {...animatedItem[0]}>
                         <div className={styles.canvas}>
                             <img className={styles.img} src={require('../../static/images/main_bg05-2.svg').default} alt="" />
                         </div>
@@ -38,7 +43,7 @@ const About = forwardRef((props, ref) => {
                             </ul>
                         </div>    
                     </div>
-                    <div className={styles.history}>
+                    <div className={styles.history} {...animatedItem[1]}>
                         <div className={styles.content}>
                             <h3 className={styles.title}>
                                 <img className={styles.icon2} src={require('../../static/images/about_career.png').default} alt="" />

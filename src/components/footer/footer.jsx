@@ -7,15 +7,21 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import styles from './footer.module.css';
 
 library.add(fab, fas);
-const Footer = () => (
+const Footer = ({ useScrollFadeIn }) => {
+        const animatedItem = {
+            0: useScrollFadeIn('up', 1, 0.1),
+            1: useScrollFadeIn('up', 1, 0.2),
+        };
+
+        return (
         <footer className={styles.footer}>
             <h2 className={styles.index}>Contact</h2>
-            <ContactForm />
-            <ul className={styles.text}>
+            <ContactForm useScrollFadeIn={useScrollFadeIn} />
+            <ul className={styles.text} {...animatedItem[0]}>
                 <li>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</li>
                 <li>사용된 일부 이미지 및 폰트 등은 별도의 출처가 있음을 밝힙니다.</li>
             </ul>
-            <div className={styles.ref}>
+            <div className={styles.ref} {...animatedItem[1]}>
                 <span>by.</span>
                 <a href="https://iconape.com/" target="_blank" rel="noreferrer" className={styles.link}>
                     <img src={require('../../static/images/footer_ape.svg').default} alt="iconape" />
@@ -48,6 +54,6 @@ const Footer = () => (
                 </ul>
             </div>
         </footer>    
-    );
+    )};
 
 export default Footer;

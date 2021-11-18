@@ -1,9 +1,15 @@
 import React from 'react';
 import styles from './main.module.css';
 
-const Main = () => (
+const Main = ({ useScrollFadeIn }) => {
+    const animatedItem = {
+        0: useScrollFadeIn('down', 1, 0),
+        1: useScrollFadeIn('down', 1, 0.1),
+    };
+
+    return (
         <section className={styles.main}>
-            <div className={styles.text}>
+            <div className={styles.text} {...animatedItem[0]}>
                 <div className={styles.title}>
                     <p className={styles.name}>Hi, i am Junhyung Park</p>
                     <h1 className={styles.position}>FrontEnd Developer</h1>
@@ -15,8 +21,8 @@ const Main = () => (
                 </p>
                 <button className={styles.button}>SEE MY RESUME</button>
             </div>
-            <div className={styles.img}></div>
+            <div className={styles.img} {...animatedItem[1]}></div>
         </section>
-    );
+    )};
 
 export default Main;
