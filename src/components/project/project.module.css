@@ -37,15 +37,15 @@
 }
 
 .canvas01 {
-    background: url('../../static/images/project_img01.jpg') no-repeat center center;
+    background: url('static/images/project_img01.jpg') no-repeat center center;
 }
 
 .canvas02 {
-    background: url('../../static/images/project_img02.jpg') no-repeat center center;
+    background: url('static/images/project_img02.jpg') no-repeat center center;
 }
 
 .canvas03 {
-    background: url('../../static/images/project_img03.jpg') no-repeat center center;
+    background: url('static/images/project_img03.jpg') no-repeat center center;
 }
 
 .text {

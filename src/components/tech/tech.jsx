@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import styles from './tech.module.css';
-import { ReactComponent as IconHtml } from '../../static/images/tech_html.svg';
-import { ReactComponent as IconCss } from '../../static/images/tech_css.svg';
+import { ReactComponent as IconHtml } from 'static/images/tech_html.svg';
+import { ReactComponent as IconCss } from 'static/images/tech_css.svg';
 
 const Tech = forwardRef(({ useScrollFadeIn }, ref) => {
     const animatedItem = {
@@ -39,19 +39,19 @@ const Tech = forwardRef(({ useScrollFadeIn }, ref) => {
                     </div>
                     <div className={styles.item} {...animatedItem[3]}>
                         <div className={styles.icon}>
-                            <img className={styles.img} src={require('../../static/images/tech_js.svg').default} alt="js" />
+                            <img className={styles.img} src={require('static/images/tech_js.svg').default} alt="js" />
                         </div>
                         <p className={styles.title}>JavaScript</p>
                     </div>
                     <div className={styles.item} {...animatedItem[4]}>
                         <div className={styles.icon}>
-                            <img className={styles.img} src={require('../../static/images/tech_react.svg').default} alt="react" />
+                            <img className={styles.img} src={require('static/images/tech_react.svg').default} alt="react" />
                         </div>
                         <p className={styles.title}>React</p>
                     </div>
                     <div className={styles.item} {...animatedItem[5]}>
                         <div className={styles.icon}>
-                            <img className={styles.img} src={require('../../static/images/tech_postcss.svg').default} alt="postcss" />
+                            <img className={styles.img} src={require('static/images/tech_postcss.svg').default} alt="postcss" />
                         </div>
                         <p className={styles.title}>PostCSS</p>
                     </div>
@@ -60,31 +60,31 @@ const Tech = forwardRef(({ useScrollFadeIn }, ref) => {
                 <div className={styles.container}>
                     <div className={styles.item} {...animatedItem[7]}>
                         <div className={styles.icon}>
-                            <img className={styles.img} src={require('../../static/images/tech_postman.svg').default} alt="postman" />
+                            <img className={styles.img} src={require('static/images/tech_postman.svg').default} alt="postman" />
                         </div>
                         <p className={styles.title}>Postman</p>
                     </div>
                     <div className={styles.item} {...animatedItem[8]}>
                         <div className={styles.icon}>
-                            <img className={styles.img} src={require('../../static/images/tech_firebase.svg').default} alt="firebase" />
+                            <img className={styles.img} src={require('static/images/tech_firebase.svg').default} alt="firebase" />
                         </div>
                         <p className={styles.title}>firebase</p>
                     </div>
                     <div className={styles.item} {...animatedItem[9]}>
                         <div className={styles.icon}>
-                            <img className={styles.img} src={require('../../static/images/tech_git.svg').default} alt="git" />
+                            <img className={styles.img} src={require('static/images/tech_git.svg').default} alt="git" />
                         </div>
                         <p className={styles.title}>Git & github</p>
                     </div>
                     <div className={styles.item} {...animatedItem[10]}>
                         <div className={styles.icon}>
-                            <img className={styles.img} src={require('../../static/images/tech_ps.svg').default} alt="adobe ps" />
+                            <img className={styles.img} src={require('static/images/tech_ps.svg').default} alt="adobe ps" />
                         </div>
                         <p className={styles.title}>Adobe PS</p>
                     </div>
                     <div className={styles.item} {...animatedItem[11]}>
                         <div className={styles.icon}>
-                            <img className={styles.img} src={require('../../static/images/tech_xd.svg').default} alt="adobe xd" />
+                            <img className={styles.img} src={require('static/images/tech_xd.svg').default} alt="adobe xd" />
                         </div>
                         <p className={styles.title}>Adobe XD</p>
                     </div>

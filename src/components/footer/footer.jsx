@@ -24,13 +24,13 @@ const Footer = ({ useScrollFadeIn }) => {
             <div className={styles.ref} {...animatedItem[1]}>
                 <span>by.</span>
                 <a href="https://iconape.com/" target="_blank" rel="noreferrer" className={styles.link}>
-                    <img src={require('../../static/images/footer_ape.svg').default} alt="iconape" />
+                    <img src={require('static/images/footer_ape.svg').default} alt="iconape" />
                 </a>
                 <a href="https://www.flaticon.com/" target="_blank" rel="noreferrer" className={styles.link}>
-                    <img src={require('../../static/images/footer_fla.svg').default} alt="flaticon" />
+                    <img src={require('static/images/footer_fla.svg').default} alt="flaticon" />
                 </a>
                 <a href="https://www.freepik.com/" target="_blank" rel="noreferrer" className={styles.link}>
-                    <img src={require('../../static/images/footer_freepik.svg').default} alt="freepik" />
+                    <img src={require('static/images/footer_freepik.svg').default} alt="freepik" />
                 </a>
             </div>
             <div className={styles.box}>
