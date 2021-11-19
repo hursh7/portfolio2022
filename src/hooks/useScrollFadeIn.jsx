@@ -42,7 +42,7 @@ const useScrollFadeIn = (direction = 'up', duration = 1, delay = 0) => {
       observer = new IntersectionObserver(handleScroll, { threshold: 0.5 });
       observer.observe(current);
       // new IntersectionObserver 로 생성한 인스턴스(observer)로 관찰자를 초기화 하고 관찰할 대상(element)를 등록한다.
-      // 관찰할 대상(Target)이 등록되거나 가기성에 변화가 생기면 관찰자는 콜백(handleScroll)을 실행한다.  
+      // 관찰할 대상(Target)이 등록되거나 가시성에 변화가 생기면 관찰자는 콜백(handleScroll)을 실행한다.  
       // threshold : 타겟의 가시성(노출)이 50% 일때 옵저버 실행.
     }
 
