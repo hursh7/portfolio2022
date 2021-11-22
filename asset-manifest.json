@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/portfolio2022/static/css/main.63473960.chunk.css",
+    "main.js": "/portfolio2022/static/js/main.1097af73.chunk.js",
+    "main.js.map": "/portfolio2022/static/js/main.1097af73.chunk.js.map",
+    "runtime-main.js": "/portfolio2022/static/js/runtime-main.9ffc6581.js",
+    "runtime-main.js.map": "/portfolio2022/static/js/runtime-main.9ffc6581.js.map",
+    "static/js/2.50be3b1d.chunk.js": "/portfolio2022/static/js/2.50be3b1d.chunk.js",
+    "static/js/2.50be3b1d.chunk.js.map": "/portfolio2022/static/js/2.50be3b1d.chunk.js.map",
+    "index.html": "/portfolio2022/index.html",
+    "static/css/main.63473960.chunk.css.map": "/portfolio2022/static/css/main.63473960.chunk.css.map",
+    "static/js/2.50be3b1d.chunk.js.LICENSE.txt": "/portfolio2022/static/js/2.50be3b1d.chunk.js.LICENSE.txt",
+    "static/media/index.module.css": "/portfolio2022/static/media/Wemakeprice-SemiBold.f3d71ca5.ttf",
+    "static/media/footer_ape.svg": "/portfolio2022/static/media/footer_ape.9bebc3ef.svg",
+    "static/media/footer_fla.svg": "/portfolio2022/static/media/footer_fla.5c55f8a5.svg",
+    "static/media/footer_freepik.svg": "/portfolio2022/static/media/footer_freepik.406b5e92.svg",
+    "static/media/link_github.svg": "/portfolio2022/static/media/link_github.71460fd6.svg",
+    "static/media/link_page.svg": "/portfolio2022/static/media/link_page.143a51aa.svg",
+    "static/media/main_bg05-2.svg": "/portfolio2022/static/media/main_bg05-2.8ac5eb38.svg",
+    "static/media/main.module.css": "/portfolio2022/static/media/main_bg11.926ea647.svg",
+    "static/media/project.module.css": "/portfolio2022/static/media/project_img03.bfedba95.jpg",
+    "static/media/tech_css.dc0a120a.svg": "/portfolio2022/static/media/tech_css.dc0a120a.svg",
+    "static/media/tech_firebase.svg": "/portfolio2022/static/media/tech_firebase.ea1a2d66.svg",
+    "static/media/tech_git.svg": "/portfolio2022/static/media/tech_git.c60b7e5a.svg",
+    "static/media/tech_html.5d6dace4.svg": "/portfolio2022/static/media/tech_html.5d6dace4.svg",
+    "static/media/tech_js.svg": "/portfolio2022/static/media/tech_js.fd46ca41.svg",
+    "static/media/tech_postcss.svg": "/portfolio2022/static/media/tech_postcss.ca045bac.svg",
+    "static/media/tech_postman.svg": "/portfolio2022/static/media/tech_postman.930ce66d.svg",
+    "static/media/tech_ps.svg": "/portfolio2022/static/media/tech_ps.2fb52ad3.svg",
+    "static/media/tech_react.svg": "/portfolio2022/static/media/tech_react.e27571ea.svg",
+    "static/media/tech_xd.svg": "/portfolio2022/static/media/tech_xd.2753d322.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ffc6581.js",
+    "static/js/2.50be3b1d.chunk.js",
+    "static/css/main.63473960.chunk.css",
+    "static/js/main.1097af73.chunk.js"
+  ]
+}
