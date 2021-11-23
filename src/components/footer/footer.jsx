@@ -1,13 +1,8 @@
 import React from 'react';
 import ContactForm from '../contact_form/contact_form';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
 import styles from './footer.module.css';
 
-library.add(fab, fas);
-const Footer = ({ useScrollFadeIn }) => {
+const Footer = ({ useScrollFadeIn, FontAwesomeIcon }) => {
         const animatedItem = {
             0: useScrollFadeIn('up', 1, 0.1),
             1: useScrollFadeIn('up', 1, 0.2),

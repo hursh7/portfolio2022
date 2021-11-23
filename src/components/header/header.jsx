@@ -1,13 +1,8 @@
 import React, { useState, forwardRef } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { fas } from "@fortawesome/free-solid-svg-icons";
 import NavigationItem from './navigation_item';
 import styles from './header.module.css';
 
-library.add(fab, fas);
-const Header = forwardRef(({ onReset }, ref) => {
+const Header = forwardRef(({ onReset, FontAwesomeIcon }, ref) => {
     const [showNav, setShowNav] = useState(false);
 
     const onToggle= () => {

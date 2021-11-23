@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import styles from './app.module.css';
 import Header from './components/header/header';
@@ -13,7 +14,7 @@ import Project from './components/project/project';
 import Footer from './components/footer/footer';
 import { useScrollFadeIn } from './hooks';
 
-library.add(fab, fas);
+library.add(fab, far, fas);
 function App() {
   const [scrollY, setScrollY] = useState(0);
   const [btnStatus, setBtnStatus] = useState(false);
@@ -70,14 +71,14 @@ function App() {
 
   return (
   <div className={styles.wrap}>
-      <Header onReset={handleTop} ref={IndexRef} />
-      <SideMenu />
+      <Header onReset={handleTop} ref={IndexRef} FontAwesomeIcon={FontAwesomeIcon} />
+      <SideMenu FontAwesomeIcon={FontAwesomeIcon} />
       <Main useScrollFadeIn={useScrollFadeIn} />
       <div ref={focusRef}>
-        <About useScrollFadeIn={useScrollFadeIn} />
+        <About useScrollFadeIn={useScrollFadeIn} FontAwesomeIcon={FontAwesomeIcon} />
         <Tech useScrollFadeIn={useScrollFadeIn} />
         <Project useScrollFadeIn={useScrollFadeIn} />
-        <Footer useScrollFadeIn={useScrollFadeIn} />
+        <Footer useScrollFadeIn={useScrollFadeIn} FontAwesomeIcon={FontAwesomeIcon} />
       </div>
     {
     btnStatus && 

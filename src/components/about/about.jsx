@@ -1,12 +1,7 @@
 import React, { forwardRef } from 'react';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fas } from "@fortawesome/free-solid-svg-icons";
-import { far } from "@fortawesome/free-regular-svg-icons";
 import styles from './about.module.css';
 
-library.add(fas, far);
-const About = forwardRef(({ useScrollFadeIn }, ref) => {
+const About = forwardRef(({ useScrollFadeIn, FontAwesomeIcon }, ref) => {
     const animatedItem = {
         0: useScrollFadeIn('right', 1, 0),
         1: useScrollFadeIn('left', 1, 0.1),
