@@ -1,0 +1,22 @@
+@value Main, MainGrey, LightGrey from '../../common/colors.css';
+@value wrapPadding, MediaMobile, FontRegular from '../../common/size.css';
+
+.index {
+    padding: 0 2.5rem;
+    font-size: FontRegular;
+    font-weight: 500;
+    color: MainGrey;
+    transition: all 0.2s ease-in;
+}
+
+.index:hover {
+    cursor: pointer;
+    color: Main;
+}
+
+@media screen and (max-width: MediaMobile) {
+    .index {
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }   
+}

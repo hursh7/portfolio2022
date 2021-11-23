@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import { fas } from "@fortawesome/free-solid-svg-icons";
+import NavigationItem from './navigation_item';
 import styles from './header.module.css';
 
 library.add(fab, fas);
@@ -16,6 +17,8 @@ const Header = forwardRef(({ onReset }, ref) => {
     const toggle = showNav === false ? styles.true : styles.false;
     const hide = showNav === false ? styles.nav : styles.hide;
 
+    const NAVIGATION_ITEMS = ['About', 'Skills', 'Projects', 'Contact'];
+
     return (
         <header className={styles.header}>
             <p href="" className={styles.logo} onClick={() => {
@@ -27,18 +30,9 @@ const Header = forwardRef(({ onReset }, ref) => {
             </p>
             <div className={`${styles.nav} ${hide}`}>
                 <ul className={styles.indexBox} ref={ref} onClick={() => onToggle()}>
-                    <li className={styles.index}>
-                        About
-                    </li>
-                    <li className={styles.index}>
-                        Skills
-                    </li>
-                    <li className={styles.index}>
-                        Projects
-                    </li>
-                    <li className={styles.index}>
-                        Contact
-                    </li>
+                    {NAVIGATION_ITEMS.map(item => (
+                        <NavigationItem key={item} item={item} />
+                    ))}
                 </ul>
                 <ul className={styles.link}>
                     <li>
