@@ -21,7 +21,7 @@ const Main = ({ useScrollFadeIn }) => {
                 </p>
                 <button className={styles.button}>SEE MY RESUME</button>
             </div>
-            <div className={styles.img} {...animatedItem[1]}></div>
+            <div className={styles.img}{...animatedItem[1]}></div>
         </section>
     )};
 

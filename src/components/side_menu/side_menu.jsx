@@ -15,7 +15,7 @@ const SideMenu = ({FontAwesomeIcon}) => (
             </li>
             <li>
                 <a href="mailto:junhp1994@gmail.com" target="_blank"  rel="noreferrer">
-                    <FontAwesomeIcon icon={["fab", "google"]} />
+                    <FontAwesomeIcon icon={["fas", "id-badge"]} />
                 </a>
             </li>
         </ul>
