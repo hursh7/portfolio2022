@@ -1,7 +1,16 @@
 import React, { forwardRef } from 'react';
+import TechItem from './tech_item';
 import styles from './tech.module.css';
 import { ReactComponent as IconHtml } from 'static/images/tech_html.svg';
 import { ReactComponent as IconCss } from 'static/images/tech_css.svg';
+import { ReactComponent as IconJs } from 'static/images/tech_js.svg';
+import { ReactComponent as IconReact } from 'static/images/tech_react.svg';
+import { ReactComponent as IconPostCss } from 'static/images/tech_postcss.svg';
+import { ReactComponent as IconPostMan } from 'static/images/tech_postman.svg';
+import { ReactComponent as IconFireBase } from 'static/images/tech_firebase.svg';
+import { ReactComponent as IconGit } from 'static/images/tech_git.svg';
+import { ReactComponent as IconPs } from 'static/images/tech_ps.svg';
+import { ReactComponent as IconXd } from 'static/images/tech_xd.svg';
 
 const Tech = forwardRef(({ useScrollFadeIn }, ref) => {
     const animatedItem = {
@@ -26,66 +35,46 @@ const Tech = forwardRef(({ useScrollFadeIn }, ref) => {
                 <p className={styles.sub} {...animatedItem[0]}>My Skillset</p>
                 <div className={`${styles.container} ${styles.mb}`}>
                     <div className={styles.item} {...animatedItem[1]}>
-                        <div className={styles.icon}>
-                            <IconHtml fill="#f16529" className={styles.img} />
-                        </div>
+                        <IconHtml fill="#f16529" className={styles.icon} />
                         <p className={styles.title}>Html 5</p>
                     </div>
                     <div className={styles.item} {...animatedItem[2]}>
-                        <div className={styles.icon}>
-                            <IconCss fill="#2196f3" className={styles.img} />
-                        </div>
+                        <IconCss fill="#2196f3" className={styles.icon} />
                         <p className={styles.title}>CSS 3</p>
                     </div>
                     <div className={styles.item} {...animatedItem[3]}>
-                        <div className={styles.icon}>
-                            <img className={styles.img} src={require('static/images/tech_js.svg').default} alt="js" />
-                        </div>
+                        <IconJs className={styles.icon} />
                         <p className={styles.title}>JavaScript</p>
                     </div>
                     <div className={styles.item} {...animatedItem[4]}>
-                        <div className={styles.icon}>
-                            <img className={styles.img} src={require('static/images/tech_react.svg').default} alt="react" />
-                        </div>
+                        <IconReact className={styles.icon} />
                         <p className={styles.title}>React</p>
                     </div>
                     <div className={styles.item} {...animatedItem[5]}>
-                        <div className={styles.icon}>
-                            <img className={styles.img} src={require('static/images/tech_postcss.svg').default} alt="postcss" />
-                        </div>
+                        <IconPostCss className={styles.icon} />
                         <p className={styles.title}>PostCSS</p>
                     </div>
                 </div>
                 <p className={styles.sub} {...animatedItem[6]}>Tools I use</p>
                 <div className={styles.container}>
                     <div className={styles.item} {...animatedItem[7]}>
-                        <div className={styles.icon}>
-                            <img className={styles.img} src={require('static/images/tech_postman.svg').default} alt="postman" />
-                        </div>
+                        <IconPostMan className={styles.icon} />
                         <p className={styles.title}>Postman</p>
                     </div>
                     <div className={styles.item} {...animatedItem[8]}>
-                        <div className={styles.icon}>
-                            <img className={styles.img} src={require('static/images/tech_firebase.svg').default} alt="firebase" />
-                        </div>
+                        <IconFireBase className={styles.icon} />
                         <p className={styles.title}>firebase</p>
                     </div>
                     <div className={styles.item} {...animatedItem[9]}>
-                        <div className={styles.icon}>
-                            <img className={styles.img} src={require('static/images/tech_git.svg').default} alt="git" />
-                        </div>
+                        <IconGit className={styles.icon} />
                         <p className={styles.title}>Git & github</p>
                     </div>
                     <div className={styles.item} {...animatedItem[10]}>
-                        <div className={styles.icon}>
-                            <img className={styles.img} src={require('static/images/tech_ps.svg').default} alt="adobe ps" />
-                        </div>
+                        <IconPs className={styles.icon} />
                         <p className={styles.title}>Adobe PS</p>
                     </div>
                     <div className={styles.item} {...animatedItem[11]}>
-                        <div className={styles.icon}>
-                            <img className={styles.img} src={require('static/images/tech_xd.svg').default} alt="adobe xd" />
-                        </div>
+                        <IconXd className={styles.icon} />
                         <p className={styles.title}>Adobe XD</p>
                     </div>
                 </div>
