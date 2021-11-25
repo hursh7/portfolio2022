@@ -2,6 +2,8 @@ import React, { useState, forwardRef } from 'react';
 import NavigationItem from './navigation_item';
 import styles from './header.module.css';
 
+const NAVIGATION_ITEMS = ['About', 'Skills', 'Projects', 'Contact'];
+
 const Header = forwardRef(({ onReset, FontAwesomeIcon }, ref) => {
     const [showNav, setShowNav] = useState(false);
 
@@ -11,8 +13,6 @@ const Header = forwardRef(({ onReset, FontAwesomeIcon }, ref) => {
     
     const toggle = showNav === false ? styles.true : styles.false;
     const hide = showNav === false ? styles.nav : styles.hide;
-
-    const NAVIGATION_ITEMS = ['About', 'Skills', 'Projects', 'Contact'];
 
     return (
         <header className={styles.header}>

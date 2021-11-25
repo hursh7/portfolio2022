@@ -1,5 +1,4 @@
 import React, { forwardRef } from 'react';
-import TechItem from './tech_item';
 import styles from './tech.module.css';
 import { ReactComponent as IconHtml } from 'static/images/tech_html.svg';
 import { ReactComponent as IconCss } from 'static/images/tech_css.svg';
