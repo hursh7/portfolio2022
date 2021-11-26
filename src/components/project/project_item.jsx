@@ -18,11 +18,11 @@ const ProjectItem = ({item, index, animatedItem}) => (
                     <div className={styles.tec}>{item.tec05}</div>
                 </div>
                 <div className={styles.linkbox}>
-                    <a href="https://github.com/hursh7/business-card-maker" target="_blank"  rel="noreferrer" className={styles.link}>
+                    <a href={item.link} target="_blank"  rel="noreferrer" className={styles.link}>
                         <img src={item.icon01} className={styles.icon} alt="프로젝트 이미지" />
                         <p className={styles.path}>{item.path01}</p>
                     </a>
-                    <a href="https://hursh7.github.io/business-card-maker/" target="_blank"  rel="noreferrer" className={styles.link}>
+                    <a href={item.page} target="_blank"  rel="noreferrer" className={styles.link}>
                         <img src={item.icon02} className={styles.icon} alt="프로젝트 이미지" />
                         <p className={styles.path}>{item.path02}</p>
                     </a>
