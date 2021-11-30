@@ -17,3 +17,20 @@
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: MediaPad) {
+    .project {
+        padding: sectionTopBottom 5rem;
+    }
+}
+
+@media screen and (max-width: MediaMobile) {
+    .project {
+        padding: calc(sectionTopBottom / 2) 2rem;
+    }
+
+    .index {
+        font-size: calc(Title / 2);
+        margin-bottom: calc(Title / 2);
+    }
+}

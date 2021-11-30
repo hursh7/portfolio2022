@@ -8,7 +8,7 @@ const ProjectItem = ({item, index, animatedItem}) => (
                 <div className={styles.number}>0{item.number}</div>
                 <h3 className={styles.title}>{item.title}</h3>
                 <p className={styles.description}>
-                        {item.description}   
+                    {item.description}   
                 </p>
                 <div className={styles.tecbox}>
                     <div className={styles.tec}>{item.tec01}</div>

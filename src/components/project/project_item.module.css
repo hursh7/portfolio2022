@@ -13,10 +13,11 @@
 }
 
 .canvas {
-    overflow: hidden;
-    flex: 1 1 60%;
+    object-fit: cover;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    flex: 1 1 60%;
 }
 
 .text {
