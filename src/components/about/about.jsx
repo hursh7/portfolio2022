@@ -59,7 +59,7 @@ const About = forwardRef(({ useScrollFadeIn, FontAwesomeIcon }, ref) => {
                 <div className={styles.container}>
                     <div className={styles.profile} {...animatedItem[0]}>
                         <div className={styles.canvas}>
-                            <img className={styles.img} src={require('static/images/main_bg05-2.svg').default} alt="profile" />
+                            <img className={styles.img} src={require('static/images/about_bg.svg').default} alt="profile" />
                         </div>
                         <div className={styles.info}>
                             <ul className={styles.itembox}>

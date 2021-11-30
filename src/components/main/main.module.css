@@ -52,7 +52,7 @@
 .img {
     width: MainDiv;
     height: MainDiv;
-    background: url('static/images/main_bg11.svg') no-repeat center;
+    background: url('static/images/main_bg.svg') no-repeat center;
 }
 
 /* .circle {
