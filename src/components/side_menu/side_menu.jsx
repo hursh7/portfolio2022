@@ -9,7 +9,7 @@ const SideMenu = ({FontAwesomeIcon}) => (
                 </a>
             </li>
             <li>
-                <a href="https://github.com/hursh7" target="_blank"  rel="noreferrer">
+                <a href="https://sudsy-skink-5a5.notion.site/JS-94f29388c3be48cba2e921db41ff45ee" target="_blank"  rel="noreferrer">
                     <FontAwesomeIcon icon={["fas", "comment-dots"]} />
                 </a>
             </li>
