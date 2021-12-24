@@ -2,164 +2,164 @@
 @value wrapPadding, sectionTopBottom, MediaLaptop, MediaPad, MediaMobile, FontSmall, FontRegular, FontMedium , Title from '../../common/size.css';
 
 .item {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 55rem;
-    background-color: rgb(241, 241, 241);
-    border-radius: 0.5rem;
-    overflow: hidden;
-    margin-bottom: 5rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 55rem;
+  background-color: rgb(241, 241, 241);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 5rem;
 }
 
 .canvas {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    flex: 1 1 60%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  flex: 1 1 60%;
 }
 
 .text {
-    overflow: hidden;
-    flex: 1 1 40%;
-    padding: 0 5rem;
+  overflow: hidden;
+  flex: 1 1 40%;
+  padding: 0 5rem;
 }
 
 .number {
-    font-size: 3rem;
-    margin-bottom: 10rem;
+  font-size: 3rem;
+  margin-bottom: 10rem;
 }
 
 .title {
-    font-weight: 400;
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-weight: 400;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .description {
-    font-size: FontRegular;
-    margin-bottom: 1rem;
+  font-size: FontRegular;
+  margin-bottom: 1rem;
 }
 
 .tecbox {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
 }
 
 .tec {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .linkbox {
-    display: flex;
+  display: flex;
 }
 
 .link {
-    display: flex;
-    align-items: center;
-    background-color: MainGrey;
-    border-radius: 0.2rem;
-    padding: 1rem 1.5rem;
-    margin: 2rem 1rem 0 0;
+  display: flex;
+  align-items: center;
+  background-color: MainGrey;
+  border-radius: 0.2rem;
+  padding: 1rem 1.5rem;
+  margin: 2rem 1rem 0 0;
 }
 
 .link:hover {
-    opacity: .9;
+  opacity: 0.9;
 }
 
 .icon {
-    width: FontMedium;
-    margin-right: 0.5rem;
+  width: FontMedium;
+  margin-right: 0.5rem;
 }
 
 .path {
-    position: relative;
-    font-size: FontSmall;
-    font-weight: 300;
-    color: #fff;
+  position: relative;
+  font-size: FontSmall;
+  font-weight: 300;
+  color: #fff;
 }
 
 @media screen and (max-width: MediaLaptop) {
-    .canvas {
-        flex: 1 1 55%;
-    }
-    
-    .text {
-        flex: 1 1 45%;
-    }
+  .canvas {
+    flex: 1 1 55%;
+  }
+
+  .text {
+    flex: 1 1 45%;
+  }
 }
 
 @media screen and (max-width: MediaPad) {
-    .project {
-        padding: sectionTopBottom 5rem;
-    }
-    
-    .item {
-        flex-direction: column;
-        height: 90rem;
-    }
-    
-    .canvas {
-        flex: 1 1 55%;
-    }
-    
-    .text {
-        flex: 1 1 45%;
-        padding: 5rem;
-    }
-    
-    .number {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-    }
+  .project {
+    padding: sectionTopBottom 5rem;
+  }
+
+  .item {
+    flex-direction: column;
+    height: 90rem;
+  }
+
+  .canvas {
+    flex: 1 1 55%;
+  }
+
+  .text {
+    flex: 1 1 45%;
+    padding: 5rem;
+  }
+
+  .number {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
 }
 
 @media screen and (max-width: MediaMobile) {
-    .project {
-        padding: calc(sectionTopBottom / 2) 2rem;
-    }
+  .project {
+    padding: calc(sectionTopBottom / 2) 2rem;
+  }
 
-    .item {
-        flex-direction: column;
-        height: 65rem;
-    }
+  .item {
+    flex-direction: column;
+    height: 65rem;
+  }
 
-    .index {
-        font-size: calc(Title / 2);
-        margin-bottom: calc(Title / 2);
-    }
+  .index {
+    font-size: calc(Title / 2);
+    margin-bottom: calc(Title / 2);
+  }
 
-    .canvas {
-        flex: 1 1 50%;
-    }
-    
-    .text {
-        flex: 1 1 50%;
-        padding: 3rem 2rem;
-    }
-    
-    .number {
-        font-size: FontRegular;
-        margin-bottom: 0.5rem;
-    }
-    
-    .title {
-        font-size: FontMedium;
-        margin-bottom: 2rem;
-    }
-    
-    .description {
-        font-size: 1.3rem;
-        margin-bottom: 0.5rem;
-    }
-    
-    .tecbox {
-        font-size: FontSmall;
-    }
-    
-    .link {
-        padding: 1rem 1.5rem;
-    }
+  .canvas {
+    flex: 1 1 50%;
+  }
+
+  .text {
+    flex: 1 1 50%;
+    padding: 3rem 2rem;
+  }
+
+  .number {
+    font-size: FontRegular;
+    margin-bottom: 0.5rem;
+  }
+
+  .title {
+    font-size: FontMedium;
+    margin-bottom: 2rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .tecbox {
+    font-size: FontSmall;
+  }
+
+  .link {
+    padding: 1rem 1.5rem;
+  }
 }
