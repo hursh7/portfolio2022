@@ -2,7 +2,7 @@ import React from 'react';
 import ContactForm from '../contact_form/contact_form';
 import styles from './footer.module.css';
 
-const Footer = ({ useScrollFadeIn, FontAwesomeIcon }) => {
+const Footer = ({ useScrollFadeIn, FontAwesomeIcon, pdf }) => {
   const animatedItem = {
     0: useScrollFadeIn('up', 1, 0.1),
     1: useScrollFadeIn('up', 1, 0.2),
@@ -79,11 +79,7 @@ const Footer = ({ useScrollFadeIn, FontAwesomeIcon }) => {
             </a>
           </li>
           <li>
-            <a
-              href='mailto:junhp1994@gmail.com'
-              target='_blank'
-              rel='noreferrer'
-            >
+            <a href={pdf} target='_blank' rel='noreferrer'>
               <FontAwesomeIcon icon={['fas', 'id-badge']} />
             </a>
           </li>

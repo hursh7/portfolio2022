@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './main.module.css';
 
-const Main = ({ useScrollFadeIn }) => {
+const Main = ({ useScrollFadeIn, pdf }) => {
   const animatedItem = {
     0: useScrollFadeIn('down', 1, 0),
     1: useScrollFadeIn('down', 1, 0.1),
@@ -20,7 +20,9 @@ const Main = ({ useScrollFadeIn }) => {
           웹접근성과 웹표준을 준수하여 퍼블리싱하고, <br />
           최신 문법의 자바스크립트(ES6+)와 리액트를 통해 개발합니다.
         </p>
-        <button className={styles.button}>SEE MY RESUME</button>
+        <a href={pdf} target='_blank' rel='noreferrer'>
+          <button className={styles.button}>SEE MY RESUME</button>
+        </a>
       </div>
       <div className={styles.img} {...animatedItem[1]}></div>
     </section>

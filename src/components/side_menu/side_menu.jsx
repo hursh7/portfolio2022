@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './side_menu.module.css';
 
-const SideMenu = ({ FontAwesomeIcon }) => (
+const SideMenu = ({ FontAwesomeIcon, pdf }) => (
   <ul className={styles.link}>
     <li>
       <a href='https://github.com/hursh7' target='_blank' rel='noreferrer'>
@@ -18,7 +18,7 @@ const SideMenu = ({ FontAwesomeIcon }) => (
       </a>
     </li>
     <li>
-      <a href='static/resume_Jun.pdf' target='_blank' rel='noreferrer'>
+      <a href={pdf} target='_blank' rel='noreferrer'>
         <FontAwesomeIcon icon={['fas', 'id-badge']} />
       </a>
     </li>
