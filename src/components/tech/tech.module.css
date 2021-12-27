@@ -2,83 +2,101 @@
 @value wrapPadding, sectionTopBottom, MediaLaptop, MediaPad, MediaMobile, FontSmall, FontRegular, FontMedium , Title from '../../common/size.css';
 
 .tech {
-    position: relative;
-    padding: sectionTopBottom wrapPadding;
+  position: relative;
+  padding: sectionTopBottom wrapPadding;
 }
 
 .index {
-    font-size: Title;
-    font-weight: 500;
-    color: MainGrey;
-    text-align: center;
-    margin-bottom: 5rem;
+  font-size: Title;
+  font-weight: 500;
+  color: MainGrey;
+  text-align: center;
+  margin-bottom: 5rem;
 }
 
 .sub {
-    font-size: 2.5rem;
-    text-align: center;
-    color: LightGrey;
+  font-size: 2.5rem;
+  text-align: center;
+  color: LightGrey;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .mb {
-    margin-bottom: 2.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 2rem 2rem 0;
-    width: 20rem;
-    height: 18rem;
-    border: 1px solid #e4e4e4;
-    border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 2rem 2rem 0;
+  width: 20rem;
+  height: 18rem;
+  border: 1px solid #e4e4e4;
+  border-radius: 0.5rem;
 }
 .item:hover .icon {
-    width: 9.5rem;
-    height: 9.5rem;
-    transition: 0.1s all ease-in;
+  width: 9.5rem;
+  height: 9.5rem;
+  transition: 0.1s all ease-in;
 }
 
 .icon {
-    width: 9rem;
-    height: 9rem;
-    margin-bottom: 1.5rem;
+  width: 9rem;
+  height: 9rem;
+  margin-bottom: 1.5rem;
 }
 
 .title {
-    font-size: 1.3rem;
-    font-weight: 500;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 @media screen and (max-width: MediaPad) {
-    .tech {
-        padding: calc(sectionTopBottom / 2) wrapPadding;
-    }
+  .tech {
+    padding: calc(sectionTopBottom / 2) wrapPadding;
+  }
 }
 
 @media screen and (max-width: MediaMobile) {
-    .tech {
-        padding: calc(sectionTopBottom / 2) 5rem;
-    }
+  .tech {
+    padding: calc(sectionTopBottom / 2) 0;
+  }
 
-    .index {
-        font-size: calc(Title / 2);
-        margin-bottom: calc(Title / 2);
-    }
+  .index {
+    font-size: calc(Title / 2);
+    margin-bottom: calc(Title / 2);
+  }
 
-    .sub {
-        font-size: FontRegular;
-    }
+  .sub {
+    font-size: FontRegular;
+  }
 
-    .item {
-        margin: 1.2rem 0;
-    }
+  .item {
+    margin: 1.2rem 1.2rem;
+    width: 16rem;
+    height: 14rem;
+  }
+
+  .item:hover .icon {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+
+  .icon {
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .title {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
