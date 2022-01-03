@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio2022/static/css/main.111a3801.chunk.css",
-    "main.js": "/portfolio2022/static/js/main.931f17f1.chunk.js",
-    "main.js.map": "/portfolio2022/static/js/main.931f17f1.chunk.js.map",
+    "main.css": "/portfolio2022/static/css/main.7771d924.chunk.css",
+    "main.js": "/portfolio2022/static/js/main.f282c09b.chunk.js",
+    "main.js.map": "/portfolio2022/static/js/main.f282c09b.chunk.js.map",
     "runtime-main.js": "/portfolio2022/static/js/runtime-main.9ffc6581.js",
     "runtime-main.js.map": "/portfolio2022/static/js/runtime-main.9ffc6581.js.map",
     "static/js/2.04330a09.chunk.js": "/portfolio2022/static/js/2.04330a09.chunk.js",
     "static/js/2.04330a09.chunk.js.map": "/portfolio2022/static/js/2.04330a09.chunk.js.map",
     "index.html": "/portfolio2022/index.html",
-    "static/css/main.111a3801.chunk.css.map": "/portfolio2022/static/css/main.111a3801.chunk.css.map",
+    "static/css/main.7771d924.chunk.css.map": "/portfolio2022/static/css/main.7771d924.chunk.css.map",
     "static/js/2.04330a09.chunk.js.LICENSE.txt": "/portfolio2022/static/js/2.04330a09.chunk.js.LICENSE.txt",
     "static/media/index.module.css": "/portfolio2022/static/media/Wemakeprice-SemiBold.f3d71ca5.ttf",
     "static/media/about_bg.svg": "/portfolio2022/static/media/about_bg.8ac5eb38.svg",
@@ -21,6 +21,7 @@
     "static/media/project_img01.f03f6e0d.jpg": "/portfolio2022/static/media/project_img01.f03f6e0d.jpg",
     "static/media/project_img02.5106e88c.jpg": "/portfolio2022/static/media/project_img02.5106e88c.jpg",
     "static/media/project_img03.4f9b7e4a.jpg": "/portfolio2022/static/media/project_img03.4f9b7e4a.jpg",
+    "static/media/resume_Jun.884fa483.pdf": "/portfolio2022/static/media/resume_Jun.884fa483.pdf",
     "static/media/tech_css.dc0a120a.svg": "/portfolio2022/static/media/tech_css.dc0a120a.svg",
     "static/media/tech_firebase.ea1a2d66.svg": "/portfolio2022/static/media/tech_firebase.ea1a2d66.svg",
     "static/media/tech_git.c60b7e5a.svg": "/portfolio2022/static/media/tech_git.c60b7e5a.svg",
@@ -35,7 +36,7 @@
   "entrypoints": [
     "static/js/runtime-main.9ffc6581.js",
     "static/js/2.04330a09.chunk.js",
-    "static/css/main.111a3801.chunk.css",
-    "static/js/main.931f17f1.chunk.js"
+    "static/css/main.7771d924.chunk.css",
+    "static/js/main.f282c09b.chunk.js"
   ]
 }
