@@ -32,9 +32,6 @@
 
 @media screen and (max-width: MediaMobile) {
   .button {
-    bottom: 2rem;
-    right: 2rem;
-    color: LightGrey;
     font-size: 3.5rem;
     transition: 0.2s all ease-in;
   }

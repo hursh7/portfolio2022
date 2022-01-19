@@ -8,16 +8,17 @@ const Header = forwardRef(({ onReset, FontAwesomeIcon }, ref) => {
   const [showNav, setShowNav] = useState(false);
 
   const onToggle = () => {
-    setShowNav(showNav => !showNav);
+    setShowNav(showNav => !showNav); // 토글로 true false 반환
   };
 
   const toggle = showNav === false ? styles.true : styles.false;
+  // 트리거 버튼 메뉴 토글 조건문 css
   const hide = showNav === false ? styles.nav : styles.hide;
+  // 모바일 버전 gnb 토글 조건문 css
 
   return (
     <header className={styles.header}>
       <p
-        href=''
         className={styles.logo}
         onClick={() => {
           onReset();
